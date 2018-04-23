@@ -13,6 +13,9 @@
  - 第七章介绍了React在服务端的渲染方法，并从一个实例触发结合Koa完整地讲述了同构的实现。
  - 第八章 探索了实现可视化图形图表的方法，以及如何将这些方法与React结合。
 
+ ## 掘金地址
+ - [第一章](https://juejin.im/post/5adc042ff265da0b78681895)
+
  ## 示例代码下载
 
 &nbsp;&nbsp;&nbsp;&nbsp;本书的实例代码托管在https://github.com/arcthur/react-book-examples 和 https://coding.net/u/arcthur/p/react-book-examples.git
