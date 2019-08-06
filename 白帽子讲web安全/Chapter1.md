@@ -1,0 +1,28 @@
+### 跨站脚本攻击，英文全称Cross Site Script 也称XSS。
+1. 反射型XSS：只是简单地把用户输入的数据反射给浏览器。往往要通过点击一个连接才能攻击成功。也叫做“非吃就型XSS”
+2. 存储型XSS：会把用户输入的数据存储在服务器端。具有很强的稳定性。
+3. DOM Based XSS：通过修改页面DOM节点形成的XSS称之为DOM Based XSS。
+### XSS进阶攻击
+1. XSS payload：读取浏览器cookie对象，从而发起cookie劫持 **（通过setCookie的时候设置HttpOnly禁止javascript读取页面cookie，这个操作会使cookie和客户端ip绑定）**
+2. 构造GET和POST请求
+3. XSS钓鱼网站
+4. 识别用户的浏览器navigator.userAgent,但是浏览器的UserAgent是可以伪造的，但是浏览器之间的实现会存在差异---不同饿浏览器会各自实现一些独特的功能，而同意浏览器的不同版本也会有细微的差别。判断方法详见（p54）
+5. css history hack：其原理是通过利用style的visited属性，如果该链接被访问过，那么颜色会与众不同。
+### XSS攻击平台
+1. Attack API 是安全研究者pdp所主导的一个项目，它总结了很多能够直接使用XSS Payload，归纳为API的方式。
+2. BeEF是XSS演示平台
+3. XSS-Proxy是一个轻量级的XSS攻击平台，通过嵌套iframe的方式可以实时地远程控制被XSS攻击的浏览器。
+4. XSS-Worm（Samy Worm 百度空间蠕虫）
+### XSS构造技巧
+1. 利用字符编码
+2. 绕过长度限制
+3. 使用base标签
+4. window.name的妙用（window.name对象赋值，没有字符限制。而且并非document对象可以实现跨域、跨页面传递数据）
+5. Flash XSS：限制Flash动态脚本的最重要参数是allowScriptAccess，这个参数定义了Flash能否跟HTML页面通信。它有三个可选值（always，sameDomain，never）使用always是非常危险的，一般推荐使用neve。如果值为sameDomain的话，请务必保证Flash文件不是用户上传的。allowNetworking也非常关键，这个参数能控制Flash与外部网络进行通信，他有三个可选值：all，internal，none，一般建议设置为none或者internal。设置all可能带来安全问题。
+### XSS的防御
+1. 四两拨千斤：HttpOnly。设置该属性后，浏览器将禁止页面的JavaScript访问带有HttpOnly属性的cookie。一个cookie的使用过程如下：step1：浏览器向服务器发起请求，这时候没有cookie。step2：服务器返回时发送Set-Cookie头，向客户端浏览器写入Cookie。step3：在该cookie到期前，浏览器的所有页面都将发送改cookie。
+2. 输入检查。XSS Filter在用户提交数据时获取变量，进行XSS检查；此时用户数据并没有结合渲染页面的HTML代码。
+3. 输出检查。编码转译
+4. 安全的编码函数 &=>&amp;  < => &lt; > => &gt; " => &quot; ' => &#x27;  /  => &#x2F;  
+处理富文本：使用白名单，避免使用黑名单（iframe，base，form，script）；尽可能禁止用户使用自定义的css与style
+防御DOM Based XSS：
