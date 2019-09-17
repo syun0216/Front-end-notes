@@ -4,7 +4,7 @@
 
 DOM之事件模型分脚本模型、内联模型（同类一个，后者覆盖）、动态绑定（同类多个）
 
-```
+```js
 <body>
 <!-- 行内绑定： 脚本模型 -->
 <button onclick="javascript:alert('test1')">test1</button>
@@ -64,7 +64,7 @@ alert("W3C Hello");
 事件委托就是利用事件冒泡，只指定一个事件处理程序，就可以管理某一类型的所有事件.  
 在绑定大量事件的时候往往选择事件委托。
 
-```
+```js
 <ul class="parent">
   <li class="child">1</li>
   <li class="child">2</li>

@@ -5,7 +5,7 @@
 3. 属性和方法被加入到this引用对象中。并执行该函数func // func.call(target)
 4. 新创建的对象由this所引用，并且最后隐式返回this // 如果func.call(target)返回的res是个对象或者function就返回他。
 
-```
+```js
 function new(func) {
   let target = {};
   target.__proto__ = func.prototype;

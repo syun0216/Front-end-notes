@@ -79,7 +79,7 @@ js单线程任务被氛围同步任务和异步任务，同步任务会在调用
 
 ## 例子
 
-```
+```js
 console.log('script start');
 setTimeout(function() {
   console.log('setTimeout');
@@ -97,7 +97,7 @@ console.log('script end');
 
 ## 例子2
 
-```
+```js
 console.log('script start')
 async function async1() {
   await async2()
@@ -158,6 +158,7 @@ console.log('script end')
 <a name="qYgPm"></a>
 ### timers
 执行`setTimeout`和`setInterval`中到期的`callback`，执行这两者回调需要设置一个毫秒数，理论上来说，应该是时间一到就立即执行callback回调，但是由于`system`的调度可能会延时，达不到预期时间。<br />以下是官网文档解释的例子：
+
 ```js
 const fs = require('fs');
 function someAsyncOperation(callback) {
@@ -224,8 +225,10 @@ Promise.resolve().then(function() {
 console.log('end')
 
 ```
+
 如果`node`版本为`v11.x`， 其结果与浏览器一致。
-```
+
+```js
 start
 end
 promise3

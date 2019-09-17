@@ -47,7 +47,7 @@ javascript并非简单的一行行解析执行，而是将javascript代码分为
 
 eg:
 
-```
+```js
  var name = 'cxk'
  function say(name) {
    return `${name} like sining dancing and rap`
@@ -88,7 +88,8 @@ eg:
 * 创建变量环境(VariableEnvironment)
 
 伪代码如下：
-```
+
+```js
 ExecutionContext = {
   ThisBinding = <this value>,
   LexicalEnvironment = {...},
@@ -100,7 +101,7 @@ ExecutionContext = {
 
 指向最后一个调用他的人，默认情况下this指向全局对象，比如window，此外可能存在隐式绑定情况，比如通过对象调用函数, eg:
 
-```
+```js
 function f() {
   console.log(this.name);
 }
@@ -131,7 +132,7 @@ obj.f(); //被调用的位置是obj所拥有 所以是Messi
 
 #### 变量环境
 
-```
+```js
 var name = 'cxk'
 function say(name) {
   const bgm = 'jntm'

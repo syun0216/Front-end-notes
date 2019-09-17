@@ -1,6 +1,6 @@
 ### bind
 
-```
+```js
 Function.prototype.bind2 = function(context) {
   var _this = this;
   var argsParent = Array.prototype.slice.call(arguments, 1);
@@ -13,7 +13,7 @@ Function.prototype.bind2 = function(context) {
 
 ### apply
 
-```
+```js
 Function.prototype.apply2 = function(context, arr) {
     var context = context || window;//因为传进来的context有可能是null
     context.fn = this;
@@ -32,7 +32,7 @@ Function.prototype.apply2 = function(context, arr) {
 
 ### call
 
-```
+```js
 Function.prototype.call2 = function(context) {
     var context = context || window; // 传进来的context有可能是空
     context.fn = this;

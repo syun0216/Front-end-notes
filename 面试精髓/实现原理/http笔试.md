@@ -4,7 +4,7 @@
 
 假设我们有一个HTML页面，如下：
 
-```
+```js
 <!-- page.html -->
  <!DOCTYPE html>
  http://www.w3.org/1999/xhtml">
@@ -21,7 +21,7 @@
 ```
 加载此页面，会获取图片，图片请求返回的响应头为
 
-```
+```js
  HTTP/1.1 200 OK
  Cache-Control: no-cache
  Content-Type: image/png

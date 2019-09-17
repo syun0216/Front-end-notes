@@ -3,7 +3,7 @@
 - 执行函数的函数上下文会保存一个内存堆对应复杂类型对象的内存地址，通过引用来使用复杂类型对象。
 - 当基本类型被闭包引用后，就会长期存在于内存中，这时就会被存放在**堆**中。
 eg:
-```
+```js
 function add() {
   const a = 1;
   const b = {
@@ -12,6 +12,7 @@ function add() {
   const sum = a + b.sum
 }
 ```
+
 ![内存模型](https://xiaomuzhu-image.oss-cn-beijing.aliyuncs.com/8f09ef156288fd2c9ee9b0b0296fd154.png)
 
 ## 生命周期

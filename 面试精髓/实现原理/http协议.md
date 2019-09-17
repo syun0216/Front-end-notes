@@ -32,7 +32,7 @@ eg:创建一篇文章如果多次post则会创建多篇；若使用put则修改�
 ### PUT和PATCH区别
 PUT和PATCH都是更新资源，而PATCH可以对资源进行局部更新。比如我们有一篇文章地址 https://www.jianshu.com/articles/1234  
 
-```
+```js
  article = {
    author: '123',
    creationDate: '2019-09-01',
@@ -43,7 +43,7 @@ PUT和PATCH都是更新资源，而PATCH可以对资源进行局部更新。比�
 
 修改文章作者事发送的数据：
 
-```
+```js
 // put
 {
   author: 'miro',
