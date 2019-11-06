@@ -220,3 +220,12 @@ Promise是一部编程的一种解决方案，比传统的解决方案(回调函
 * for of 循环不仅支持数组、大多数伪数组对象，也支持字符串遍历，此外还支持 Map 和 Set 对象遍历。
 * for in循环可以遍历字符串、对象、数组，不能遍历Set/Map
 * forEach 循环不能遍历字符串、对象,可以遍历Set/Map
+
+
+### ES2018
+
+Promise.prototype.finally() 
+
+Promise.prototype.finally（）最终确定整个promises实现，允许你注册一个在一个promise被解决（被满足或被拒绝）时被调用的回调。 
+
+一个典型的用例是在fetch（）请求之后隐藏一个微调器：而不是复制最后一个.then（）和.catch（）中的逻辑，现在可以将它放在.finally（）
