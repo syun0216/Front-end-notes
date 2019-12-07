@@ -1,7 +1,6 @@
 module.exports = {
   title: '前端学习文档',
-  dest: './dist',
-  desc: '123',
+  dest: './docs',
   base: '/',
   port: 9527,
   extraWatchFiles: ['./*'],
