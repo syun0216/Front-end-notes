@@ -1,7 +1,7 @@
 module.exports = {
   title: '前端学习文档',
   dest: './docs',
-  base: '/',
+  base: '/Front-end-notes/',
   port: 9527,
   extraWatchFiles: ['./*'],
   markdown: {
