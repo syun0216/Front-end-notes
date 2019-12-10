@@ -1,4 +1,4 @@
-```
+```js
 function travelsal(node) {
     if(node && node.nodeType === 1) { //是元素节点
         console.log(node.tagName)

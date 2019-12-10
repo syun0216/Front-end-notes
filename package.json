@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/syun0216/Front-end-notes/issues"
   },
-  "homepage": "https://github.com/syun0216/Front-end-notes#readme"
+  "homepage": "https://github.com/syun0216/Front-end-notes#readme",
+  "devDependencies": {
+    "@vuepress/plugin-active-header-links": "^1.2.0",
+    "@vuepress/plugin-back-to-top": "^1.2.0",
+    "@vuepress/plugin-nprogress": "^1.2.0"
+  }
 }

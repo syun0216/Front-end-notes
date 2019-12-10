@@ -4,13 +4,18 @@ module.exports = {
   base: '/Front-end-notes/',
   port: 9527,
   extraWatchFiles: ['./*'],
-  markdown: {
-    lineNumbers: true // 代码块显示行号
-  },
+  head: [
+    ['link', { rel: 'shortcut icon', type: "image/x-icon", href: `/favicon.ico` }]
+  ],
   themeConfig: {
     repo: 'https://github.com/syun0216/Front-end-notes',
+    editLinks: true,
+    // 默认为 "Edit this page"
+    editLinkText: '在Github上编辑此页',
     docsDir: '/',
     docsBranch: 'master',
+    plugins: ['@vuepress/back-to-top', '@vuepress/active-header-links', '@vuepress/nprogress'],
+    lastUpdated: '上次更新',
     nav: [{
         text: 'JavaScript',
         link: '/JavaScript/'

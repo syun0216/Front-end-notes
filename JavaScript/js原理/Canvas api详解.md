@@ -31,7 +31,7 @@
 
 > beginPath 方法表示开始绘制路径，moveTo(x, y)方法设置线段的起点，lineTo(x, y)方法设置线段的终点，stroke 方法用来给透明的线段着色
 
-```?
+```js
 context.beginPath(); // 开始路径绘制
 context.moveTo(20, 20); // 设置路径的起点
 context.lineTo(200, 20); // 绘制一条到(200,20)的直线
