@@ -7,14 +7,14 @@ module.exports = {
   head: [
     ['link', { rel: 'shortcut icon', type: "image/x-icon", href: `/favicon.ico` }]
   ],
+  // plugins: ['@vuepress/back-to-top'],
   themeConfig: {
     repo: 'https://github.com/syun0216/Front-end-notes',
     editLinks: true,
     // 默认为 "Edit this page"
     editLinkText: '在Github上编辑此页',
     docsDir: '/',
-    docsBranch: 'master',
-    plugins: ['@vuepress/back-to-top', '@vuepress/active-header-links', '@vuepress/nprogress'],
+    docsBranch: 'master',    
     lastUpdated: '上次更新',
     nav: [{
         text: 'JavaScript',
@@ -158,6 +158,10 @@ module.exports = {
             {
               title: '基础知识3',
               path: '/JavaScript/jsInfoSeries/基础知识3'
+            },
+            {
+              title: '基础知识4',
+              path: '/JavaScript/jsInfoSeries/基础知识4'
             },
           ]
         },
