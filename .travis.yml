@@ -19,9 +19,9 @@ script:
   - yarn docs:build
 
 after_script:
-  - git config --global user.name ${user_name}
-  - git config --global user.email ${user_email}
+  - git config --global user.name $user_name
+  - git config --global user.email $user_email
   - git add .
   - git commit -m ":construction_worker:- Build & Deploy by Travis CI"
-  - git push --force --quiet https://${travis_token}@${git_address} master
-  
+  # 这里的 travis_token 即之前在 travis 项目的环境变量里添加的
+  - git push --force --quiet https://$travis_token@github.com/syun0216/Front-end-notes.git master
