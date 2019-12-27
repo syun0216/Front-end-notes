@@ -1,4 +1,5 @@
-# Front-end-notes [![Build Status](https://travis-ci.org/syun0216/Front-end-notes.svg?branch=master)](https://travis-ci.org/syun0216/Front-end-notes)
+### Front-end-notes  [![Build Status](https://travis-ci.org/syun0216/Front-end-notes.svg?branch=master)](https://travis-ci.org/syun0216/Front-end-notes)
+
 
 
 ---
