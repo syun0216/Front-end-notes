@@ -3,6 +3,7 @@ language: node_js
 env:
   global:
     - GH_REF: github.com/syun0216/Front-end-notes.git
+    - secure: "G+hcsNbJVCe2/nEkHYgOKaHHkR19Oe5YlYXHsoq7g1mwnFWDq6Av01qEnehLW+au/82gHImE26bhxs0xA9IinyGOVqN0XXOAQLdsbba93/qbjp2uS+KFL5sGg7OOUDaap7NHLapAcjxn6IK/JWq7jza6WTPvGDHvZ4OaHy5RJEZjbzzJjGgwNbqbtrYEW9FKawJUGvotKPJWPlO77AL9gpq1Cp6c8mFpo2CyOma831mJ0i1fG5v5bU9gYjOSQhfjCfxDvThfyhDEMAZbfTuPJ5rld9DA74tHq5fQ8hmoloQMqdkU+1WoBlEbhzRQ0QmRuJ85wcyMHPC4RFULctHCGwyq4zw6B/sDXqKD40WcEZMo68MT+k/bg0qNbvGOKPHqpyTFCFf/JZHm2PW0nT5FeNXA1jjSLU1rKIn8v3Nvcdkblzv9XtsqEDGBLKl79o/yzFzEOrMeCSJa74rlsTWsu4GNRrVCa3Xat6Gv41tFypVue631jgTK5MhUkMBlf4CqqJRlYPEj7Xr890TB/inKOJ7TGR/yIZMigA7YFp743Fusr1P3w6KkYgW/X+36R+ed8gonYCn89YtXcLWJbiZ0IP+9q9ZbYyYkjVP8OpGUc3bFjXCQnBNjjYy4F+i0HASpJvNvZUo392cmNaPbAUFbYI5BUx0Ym6X09SyRrXrwBeg="
 
 sudo: false
 
@@ -15,6 +16,10 @@ cache:
   directories:
     - node_modules
 
+branches:
+  only:
+    - master
+
 install:
   - npm i yarn -g
   - yarn global add vuepress
@@ -23,10 +28,10 @@ script:
   - yarn docs:build
 
 after_success:
-  - git config --global user.name syun0216
-  - git config --global user.email 517897442@qq.com
+  - git config --global user.name "syun0216"
+  - git config --global user.email "517897442@qq.com"
   - git init
   - git add .
   - git commit -m ":construction_worker:- Build & Deploy by Travis CI"
   # 这里的 REPO_TOKEN 即之前在 travis 项目的环境变量里添加的
-  - git push --force --quiet "https://${REPO_TOKEN}@${GH_REF}" master
+  - git push --force --quiet "https://${REPO_TOKEN}@${GH_REF}" master:master
