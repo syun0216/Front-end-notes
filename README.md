@@ -1,3 +1,6 @@
+# Front-end-notes [![Build Status](https://travis-ci.org/syun0216/Front-end-notes.svg?branch=master)](https://travis-ci.org/syun0216/Front-end-notes)
+
+
 ---
 home: true
 heroText: 前端学习文档
