@@ -7,6 +7,7 @@ node_js:
 
 cache:
   apt: true
+  yarn: true
   directories:
     - node_modules
 
@@ -18,8 +19,9 @@ script:
   - yarn docs:build
 
 after_script:
-  - git config user.name "${user_name}"
-  - git config user.email "${user_email}"
+  - git config --global user.name ${user_name}
+  - git config --global user.email ${user_email}
   - git add .
   - git commit -m ":construction_worker:- Build & Deploy by Travis CI"
-  - git push --force --quiet "https://${travis_token}@${git_address}"
+  - git push --force --quiet https://${travis_token}@${git_address} master
+  
