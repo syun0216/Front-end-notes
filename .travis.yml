@@ -1,0 +1,18 @@
+language: node_js
+
+sudo: false
+
+node_js:
+  - '12'
+
+cache:
+  apt: true
+  directories:
+    - node_modules
+
+install:
+  - npm i yarn -g
+  - yarn global add vuepress
+
+script:
+  - yarn docs:build
