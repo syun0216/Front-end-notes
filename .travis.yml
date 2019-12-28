@@ -1,8 +1,11 @@
 language: node_js # node环境
 node_js:
   - lts/*
+install:
+  - npm i yarn -g
+  - yarn global add vuepress
 script:
-  - npm run docs:build # 执行命令
+  - yarn docs:build # 执行命令
 deploy:
   provider: pages
   skip-cleanup: true
