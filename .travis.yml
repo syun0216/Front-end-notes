@@ -1,0 +1,18 @@
+language: node_js # node环境
+node_js:
+  - lts/*
+install:
+  - npm i yarn -g
+  - yarn global add vuepress
+script:
+  - yarn docs:build # 执行命令
+  - pwd
+deploy:
+  provider: pages
+  local_dir: ./
+  skip-cleanup: true
+  github-token: $REPO_TOKEN # travis服务上的token变量
+  target-branch: gh-pages # 集成发布到master上
+  keep-history: true
+  on:
+    branch: master
