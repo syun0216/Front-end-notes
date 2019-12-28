@@ -10,6 +10,7 @@ script:
 deploy:
   provider: pages
   skip-cleanup: true
+  local_dir: /
   github-token: $REPO_TOKEN # travis服务上的token变量
   target-branch: gh-pages # 集成发布到master上
   keep-history: true
