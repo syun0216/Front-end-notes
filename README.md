@@ -1,7 +1,3 @@
-### Front-end-notes  [![Build Status](https://travis-ci.org/syun0216/Front-end-notes.svg?branch=master)](https://travis-ci.org/syun0216/Front-end-notes)
-
-
-
 ---
 home: true
 heroText: 前端学习文档
@@ -17,3 +13,5 @@ features:
   details: VuePress 为每个页面预渲染生成静态的 HTML，同时在页面被加载的时候，将作为 SPA 运行
 footer: syun 2019
 ---
+
+[![Build Status](https://travis-ci.org/syun0216/Front-end-notes.svg?branch=master)](https://travis-ci.org/syun0216/Front-end-notes)
