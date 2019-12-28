@@ -5,7 +5,7 @@
 Object.keys()方法会返回一个由一个给定对象的自身可枚举属性组成的数组，数组中属性名的排列属性和使用for...in循环遍历该对象时返回的顺序一致。如果对象的键值对都不可枚举，那么将返回由键组成的数组。
 这是合理的，因为大多数时间只需要关注对象自身的属性。  
 
-```
+``` js
 let simpleColors = {
   colorA: 'white',
   colorB: 'black'
@@ -23,7 +23,7 @@ natureColors['colorB']; //black
 - natureColors包含从simpleColors原型对象继承的属性，但是Object.keys()函数会跳过它们。
 - Object.values() 和 Object.entries() 也都是返回一个给定对象自身可枚举属性的键值对数组。
 
-```
+``` js
 // ...
 Object.values(natureColors); 
 // => ['green', 'yellow']
@@ -32,7 +32,7 @@ Object.entries(natureColors);
 
 ```
 **for...in不仅可以循环枚举还可以枚举原型链中的属性**
-```
+``` js
 let enumerableKeys = [];
 for(let key in natureColors) {
   enmerableKeys.push(key);
@@ -45,7 +45,7 @@ enmerableKeys; // => ['colorC', 'colorD', 'colorA', 'colorB']
 
 **Object.values方法返回一个给定对象自身的所有可枚举属性值的数组，值的书序与使用for...in循环的顺序相同**
 
-```
+``` js
 let meals = {
   mealA: 'Breakfast',
   mealB: 'Lunch',
@@ -60,7 +60,7 @@ for(let mealName of Object.values(meals)) {
 
 **Object.entries()** 方法返回一个给定对象自身可枚举属性的键值对数组，其排列与使用 for...in 循环遍历该对象时返回的顺序一致（区别在于 for-in 循环也枚举原型链中的属性）。
 
-```
+``` js
 let meals = {
   mealA: 'Breakfast',
   mealB: 'Lunch',
@@ -77,7 +77,7 @@ for (let [key, value] of Object.entries(meals)) {
 当普通对象要转换成 Map 时Object.entries() 就很有用，因为Object.entries() 返回的格式与Map构造函数接受的格式完全相同：(key,value)。  
 
 
-```
+``` js
 let greetings = {
   morning: 'Good morning',
   midday: 'Good day',

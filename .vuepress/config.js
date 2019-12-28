@@ -165,6 +165,27 @@ module.exports = {
             },
           ]
         },
+        {
+          title: '技巧',
+          collapsable: false,
+          children: [{
+              title: '5个js解构有趣用途',
+              path: '/JavaScript/技巧/5个js解构有趣用途'
+            },
+            {
+              title: '如何使用set提高代码性能',
+              path: '/JavaScript/技巧/如何使用set提高代码性能'
+            },
+            {
+              title: 'cordova构建项目时的问题',
+              path: '/JavaScript/技巧/cordova构建项目时的问题'
+            },
+            {
+              title: 'js中轻松遍历对象属性的几种方式',
+              path: '/JavaScript/技巧/js中轻松遍历对象属性的几种方式'
+            }
+          ]
+        }
       ],
       '/css/': [{
           title: '怎么写出更好的css',

@@ -17,7 +17,7 @@ Set用于搜索、删除和插入元素时间复杂度都只有0(1)
 
 ### 比较Set和Array
 
-```
+``` js
 let arr = [], set = new Set(), n = 100000;
 for(let i=0;i<n;i++) {
   arr.push(i);
@@ -25,7 +25,7 @@ for(let i=0;i<n;i++) {
 }
 ```
 - 查找元素
-```
+``` js
 let result;
 console.time('Array'); 
 result = arr.indexOf(123123) !== -1; 
@@ -41,7 +41,7 @@ Set: 0.023ms
 
 - 添加元素
 
-```
+``` js
 console.time('Array'); 
 arr.push(n);
 console.timeEnd('Array');
@@ -55,7 +55,7 @@ Set: 0.003ms
 
 - 删除元素
 
-```
+``` js
 const deleteFromArr = (arr, item) => {
   let index = arr.indexOf(item);
   return index !== -1 && arr.splice(index, 1);
@@ -75,7 +75,7 @@ Set: 0.015ms
 
 ### 案例1：从数组中删除重复值
 
-```
+``` js
 const duplicateCollection = [1,2,1,3,2,4];
 let uniqueCollection = [...new Set(duplicateCollection)]; // [1,2,3,4];
 ```
@@ -85,7 +85,7 @@ let uniqueCollection = [...new Set(duplicateCollection)]; // [1,2,3,4];
 给定一个整数无序数组和变量 sum，如果存在数组中任意两项和使等于 sum 的值，则返回true。否则,返回false。例如，数组[3,5,1,4]和 sum = 9，函数应该返回true，因为4 + 5 = 9。
 
 解决这个问题的一个很好的方法是遍历数组，创建 Set保存相对差值。
-```
+``` js
 const findSum = (arr, val) => {
   let searchValues = new Set();
   searchValues.add(val - arr[0]);
