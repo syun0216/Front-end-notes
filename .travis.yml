@@ -11,7 +11,7 @@ deploy:
   provider: pages
   skip-cleanup: true
   github-token: $REPO_TOKEN # travis服务上的token变量
-  target-branch: master # 集成发布到master上
+  target-branch: gh-pages # 集成发布到master上
   keep-history: true
   on:
-    branch: qh-pages
+    branch: master
