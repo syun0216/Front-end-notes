@@ -6,10 +6,11 @@ install:
   - yarn global add vuepress
 script:
   - yarn docs:build # 执行命令
+  - pwd
 deploy:
   provider: pages
   skip-cleanup: true
-  local_dir: /docs # 部署的文件夹文件
+  local_dir: ./docs # 部署的文件夹文件
   github-token: $REPO_TOKEN # travis服务上的token变量
   target-branch: master # 集成发布到master上
   keep-history: true
