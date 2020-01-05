@@ -8,10 +8,11 @@
 ```js
 function new(func) {
   let target = {};
-  let args = [].slice.call(arguments, 1)
+  let args = [].slice.call(arguments, 1) // 获取除第一个参数意外的参数
   target.__proto__ = func.prototype;
-  let res = func.apply(target, args);
+  let res = func.apply(target, args); // 得到函数执行的结果
   if((typeof(res) == 'object' && res !== null) || typeof(res) == 'function') {
+    // 如果为object(*排除null情况) 或者是function 则将结果返回
     return res;
   }
   return target;

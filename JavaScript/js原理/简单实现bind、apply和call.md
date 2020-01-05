@@ -11,6 +11,8 @@ Function.prototype.bind2 = function(context) {
 }
 ```
 
+> 参考 [面试官问：能否模拟实现JS的bind方法](https://juejin.im/post/5bec4183f265da616b1044d7)
+
 ### apply
 
 ```js
