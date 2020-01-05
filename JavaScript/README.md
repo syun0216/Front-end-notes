@@ -4,6 +4,6 @@ sidebarDepth: 0
 
 # Overview
 
-::: warning
+::: tip 提示
 JavaScript文档
 :::

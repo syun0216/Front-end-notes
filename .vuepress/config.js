@@ -83,6 +83,10 @@ module.exports = {
               path: '/JavaScript/js原理/如何遍历一个dom tree'
             },
             {
+              title: '实现函数currying',
+              path: '/JavaScript/js原理/实现函数currying'
+            },
+            {
               title: '实现一个event',
               path: '/JavaScript/js原理/实现一个event'
             },
@@ -220,11 +224,11 @@ module.exports = {
         '/web/http协议',
       ],
       '/project/': [
-        '/project/浏览器原理',
-        '/project/浏览器兼容性问题',
-        '/project/移动端开发兼容性适配',
-        '/project/前端性能优化',
-        '/project/前端如何进行seo优化',
+        {title: '浏览器原理', path: '/project/浏览器原理', collapsable: false},
+        {title: '浏览器兼容性问题', path: '/project/浏览器兼容性问题', collapsable: false},
+        {title: '移动端开发兼容性适配', path: '/project/移动端开发兼容性适配', collapsable: false},
+        {title: '前端性能优化', path: '/project/前端性能优化', collapsable: false},
+        {title: '前端如何进行seo优化', path: '/project/前端如何进行seo优化', collapsable: false},
         {title: 'webpack', collapsable: false, children: [
           '/project/webpack/webpack HMR.md',
           '/project/webpack/webpack优化基本方法.md',
@@ -232,10 +236,12 @@ module.exports = {
       ],
       '/algorithm/': [
         {title: 'leetcode题解', collapsable: false, children: [
-          '/algorithm/leetcode题解/两数之和',
-          '/algorithm/leetcode题解/判断整数是否为回文串',
-          '/algorithm/leetcode题解/无重复字符的最长子串'
-        ]}
+          {title: '两数之和',path: '/algorithm/leetcode题解/两数之和', collapsable: false},
+          {title: '判断整数是否为回文串',path: '/algorithm/leetcode题解/判断整数是否为回文串', collapsable: false},
+          {title: '无重复字符的最长子串',path: '/algorithm/leetcode题解/无重复字符的最长子串', collapsable: false}
+          ],
+        },
+        '/algorithm/JavaScript排序'
       ],
       '/framework/': [
         {title: 'React',collapsable: false, children: [
@@ -251,22 +257,22 @@ module.exports = {
       ],
       '/books/': [
         {title: '白帽子讲web安全', collapsable: false, children: [
-          '/books/白帽子讲web安全/HTML5安全',
-          '/books/白帽子讲web安全/PHP安全',
-          '/books/白帽子讲web安全/WebServer配置安全',
-          '/books/白帽子讲web安全/Web框架安全',
-          '/books/白帽子讲web安全/互联网业务安全',
-          '/books/白帽子讲web安全/加密算法和随机数',
-          '/books/白帽子讲web安全/安全的开发流程',
-          '/books/白帽子讲web安全/安全运营',
-          '/books/白帽子讲web安全/应用层拒绝服攻击',
-          '/books/白帽子讲web安全/文件上传漏洞',
-          '/books/白帽子讲web安全/注入攻击',
-          '/books/白帽子讲web安全/点击劫持',
-          '/books/白帽子讲web安全/认证与会话管理',
-          '/books/白帽子讲web安全/访问控制',
-          '/books/白帽子讲web安全/跨站点请求伪造(CSRF)',
-          '/books/白帽子讲web安全/跨站脚本攻击'
+          {title: 'HTML5安全',path: '/books/白帽子讲web安全/HTML5安全', collapsable:false},
+          {title: 'PHP安全',path: '/books/白帽子讲web安全/PHP安全', collapsable:false},
+          {title: 'WebServer配置安全',path: '/books/白帽子讲web安全/WebServer配置安全', collapsable:false},
+          {title: 'Web框架安全',path: '/books/白帽子讲web安全/Web框架安全', collapsable:false},
+          {title: '互联网业务安全',path: '/books/白帽子讲web安全/互联网业务安全', collapsable:false},
+          {title: '加密算法和随机数',path: '/books/白帽子讲web安全/加密算法和随机数', collapsable:false},
+          {title: '安全的开发流程',path: '/books/白帽子讲web安全/安全的开发流程', collapsable:false},
+          {title: '安全运营',path: '/books/白帽子讲web安全/安全运营', collapsable:false},
+          {title: '应用层拒绝服攻击',path: '/books/白帽子讲web安全/应用层拒绝服攻击', collapsable:false},
+          {title: '文件上传漏洞',path: '/books/白帽子讲web安全/文件上传漏洞', collapsable:false},
+          {title: '注入攻击',path: '/books/白帽子讲web安全/注入攻击', collapsable:false},
+          {title: '点击劫持',path: '/books/白帽子讲web安全/点击劫持', collapsable:false},
+          {title: '认证与会话管理',path: '/books/白帽子讲web安全/认证与会话管理', collapsable:false},
+          {title: '访问控制',path: '/books/白帽子讲web安全/访问控制', collapsable:false},
+          {title: '跨站点请求伪造(CSRF)',path: '/books/白帽子讲web安全/跨站点请求伪造(CSRF)', collapsable:false},
+          {title: '跨站脚本攻击',path: '/books/白帽子讲web安全/跨站脚本攻击', collapsable:false}
         ]},
         {title: '深入react技术栈', collapsable: false, children: [
           '/books/深入react技术栈/chapter1.md'
