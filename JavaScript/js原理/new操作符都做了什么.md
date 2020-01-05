@@ -8,9 +8,10 @@
 ```js
 function new(func) {
   let target = {};
+  let args = [].slice.call(arguments, 1)
   target.__proto__ = func.prototype;
-  let res = func.call(target);
-  if(typeof(res) == 'object' || typeof(res) == 'function') {
+  let res = func.apply(target, args);
+  if((typeof(res) == 'object' && res !== null) || typeof(res) == 'function') {
     return res;
   }
   return target;
