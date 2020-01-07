@@ -245,10 +245,15 @@ module.exports = {
       ],
       '/framework/': [
         {title: 'React',collapsable: false, children: [
-          '/framework/React/虚拟DOM原理理解',
-          '/framework/React/React Hook',
+          {title: '虚拟DOM原理理解',path: '/framework/React/虚拟DOM原理理解'},
+          {title: 'React Hook',path: '/framework/React/React Hook'},
           {title: 'React组件复用指南',path: '/framework/React/组件复用指南'},
-        ]}
+        ]},
+        {
+          title: 'Vue', collapsable: false, children: [
+            {title: 'Vue原理举一反三', path: '/framework/Vue/Vue举一反三'}
+          ]
+        }
       ],
       '/interview/': [
         {title: '面试',path: '/interview/'},
