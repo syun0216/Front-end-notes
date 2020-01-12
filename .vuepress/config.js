@@ -260,6 +260,8 @@ module.exports = {
         {title: '大漠面试3',path: '/interview/大漠面试3'},
         {title: '大漠面试4', path: '/interview/大漠面试4'},
         {title: '乐信2面', path: '/interview/乐信2面'},
+        {title: '高频面试总结', path: '/interview/高频面试总结'},
+        {title: '大前端面试宝典', path: '/interview/大前端面试宝典'}
       ],
       '/books/': [
         {title: '白帽子讲web安全', collapsable: false, children: [
