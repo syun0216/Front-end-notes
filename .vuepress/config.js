@@ -5,7 +5,7 @@ module.exports = {
   port: 9527,
   extraWatchFiles: ['./*'],
   head: [
-    ['link', { rel: 'shortcut icon', type: "image/x-icon", href: `/favicon.ico` }]
+    ['link', { rel: 'shortcut icon', type: "image/x-icon", href: `./favicon.ico` }]
   ],
   // plugins: ['@vuepress/back-to-top'],
   themeConfig: {
@@ -260,6 +260,7 @@ module.exports = {
         {title: '大漠面试3',path: '/interview/大漠面试3'},
         {title: '大漠面试4', path: '/interview/大漠面试4'},
         {title: '乐信2面', path: '/interview/乐信2面'},
+        {title: 'Shopee1面', path: '/interview/Shopee1面'},
         {title: '高频面试总结', path: '/interview/高频面试总结'},
         {title: '大前端面试宝典', path: '/interview/大前端面试宝典'}
       ],
