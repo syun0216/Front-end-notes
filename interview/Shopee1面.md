@@ -1,5 +1,7 @@
 ### 介绍jsonp、以及他的原理
 
+[JSONP](https://www.cnblogs.com/lemontea/archive/2012/12/11/2812268.html)
+
 ### 什么时候会引起跨域
 
 同源策略：  
@@ -217,14 +219,201 @@ require(url)不会报错
 
 ### requestAnimationFrame和setTimeout的区别、为什么RAF会比较好
 
+window.requestAnimationFrame这个方法是用来在页面重绘之前，通知浏览器调用一个指定的函数  
+<img src="./img/requestAnimationFrame.webp"/>
+相当一部分的浏览器显示频率是16.7ms, 一秒60帧，如果我们设置setTimeout 10ms就会出现过度绘制的状态，也就是掉帧  
+requestAnimationFrame就是跟着浏览器的绘制走，如果浏览器设备绘制间隔是16.7ms，那我们就用这个间隔绘制；如果浏览器间隔是10ms，就用10ms，这样就不会存在掉帧的现象
+
+### setTimeout和setInterval哪个更准确
+
+[setTimeout与setInterval区别](https://jixianqianduan.com/frontend-javascript/2014/08/25/js-settimeout-setinterval.html)
+
+> setTimeout和setInterval的延时最小间隔是4ms（W3C在HTML标准中规定）；在JavaScript中没有任何代码是立刻执行的，但一旦进程空闲就尽快执行。这意味着无论是setTimeout还是setInterval，所设置的时间都只是n毫秒被添加到队列中，而不是过n毫秒后立即执行。
+
+
+
 ### 实现一个拖拽组件、怎么防止频繁触发，你会改变哪个属性达到效果
 
+函数节流，改变transfrom属性
+
 ### 手写一个节流函数
+
+```js
+function throttle(fn, wait) {
+  let canrun = true;
+  return function() {
+    if(!canrun) return
+    canrun = false
+    setTimeout(() => {
+      canrun = true
+      fn.apply(this, arguments)
+    }, wait)
+  }
+}
+```
 
 ### 有以下一个数组，请实现一个单链表
 
 ```js
 let a = [1,2,3]
+```
+链表是一种数据结构，单向链表是最简单的一种。它有一个head指针，整个链表都有很多节点构成，head最终会指向链表头节点；每个节点由两个信息组成：节点数据和指向下一个节点的指针，最后一个节点的指针为 null 。
+
+节点  
+每个节点包含该节点的数据和指向下一个节点的指针：
+```js
+/**
+ * 单个链表节点
+ */
+class Node {
+  constructor(val) {
+    this.val = val;
+    this.next = null;
+  }
+}
+```
+链表结构  
+链表除了包括节点还包括一些属性：比如长度、head指针  
+```js
+/**
+ * 链表
+ */
+class LinkedList {
+  constructor(val = null) {
+    this.length = 0; // 链表长度
+    this.head = null; // 链表的head指针
+    if(val) {
+      this.head = new Node(val);
+      this.length = 1;
+    }
+  }
+}
+```
+append
+找到链表中next指向为空，进行插入：  
+
+```js
+class LinkedList {
+  ...
+  append(val) { 
+    const node = new Node(val); // 创建节点
+    if(this.head === null) { // 如果是个空列表
+      this.head = node
+    }else{
+      let current = this.head;
+      while(current.next) { // 找到 next 指向为空的节点
+        current = current.next;
+      }
+      current.next = node
+    }
+    this.length += 1;
+  }
+}
+```
+
+removeAt  
+删除指定节点，将前一个节点的next替换成这个节点的next
+
+```js
+class LinkedList {
+  ...
+  removeAt(position) {
+    if(position < 0 || position >= this.length) {
+      return null
+    }
+    let current = this.head;
+    if(position === 0) { // 删除头节点，只需要改变head指针即可
+      this.head = current.next;
+    }else {
+      let index = 0
+      let prev = null
+      while(index<position) {
+        prev = current
+        current = current.next
+        index+=1
+      }
+      prev.next = current.next
+    }
+  }
+}
+```
+
+insert 在指定位置插入节点
+```js
+class LinkedList{
+  ...
+  insert(position, val) {
+    if(position < 0 || position >= this.length) {
+      return false
+    }
+    let currrent = this.head;
+    const node = new Node(val);
+    if(position === 0) {
+      node.next = current
+      this.head = node
+    }else {
+      let index = 0;
+      let prev = null;
+      while(index < position) {
+        index+=1;
+        prev = current
+        current = current.next
+      }
+      node.next = current
+      prev.next = node
+    }
+    this.length += 1
+    return true
+  }
+}
+```
+
+indexOf 返回指定值的索引
+
+```js
+indexOf(val) {
+  let index = 0;
+  let current = this.head;
+  while(index < this.length) {
+    if(current.val === val) {
+      return index
+    }
+    current = current.next
+    index+=1
+  }
+  return -1
+}
+```
+
+remove（移除第一个指定值的节点）
+
+```js
+remove(val) {
+  let index = this.indexOf(val)
+  return this.removeAt(index)
+}
+```
+
+size 返回链表长度
+```js
+class LinkedList {
+  ...
+  size() {
+    return this.length;
+  }
+  ...
+}
+```
+isEmpty（返回是否为空链表）
+
+```js
+class LinkedList {
+  ...
+  isEmpty() {
+    return !!this.length;
+  }
+  ...
+}
 ```
 
 ### 数组和链表搜索、删除、查找的复杂度
