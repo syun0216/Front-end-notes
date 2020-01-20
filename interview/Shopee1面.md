@@ -220,7 +220,7 @@ require(url)不会报错
 ### requestAnimationFrame和setTimeout的区别、为什么RAF会比较好
 
 window.requestAnimationFrame这个方法是用来在页面重绘之前，通知浏览器调用一个指定的函数  
-<img src="./img/requestAnimationFrame.webp"/>
+<img src="./img/requestAnimationFrame.png"/>
 相当一部分的浏览器显示频率是16.7ms, 一秒60帧，如果我们设置setTimeout 10ms就会出现过度绘制的状态，也就是掉帧  
 requestAnimationFrame就是跟着浏览器的绘制走，如果浏览器设备绘制间隔是16.7ms，那我们就用这个间隔绘制；如果浏览器间隔是10ms，就用10ms，这样就不会存在掉帧的现象
 
