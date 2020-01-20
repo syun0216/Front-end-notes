@@ -263,6 +263,7 @@ module.exports = {
         {title: 'Shopee1面', path: '/interview/Shopee1面'},
         {title: '阿里1面', path: '/interview/阿里1面'},
         {title: '头条1面', path: '/interview/头条1面'},
+        {title: '微众银行1面', path: '/interview/微众银行1面'},
         {title: '高频面试总结', path: '/interview/高频面试总结'},
         {title: '大前端面试宝典', path: '/interview/大前端面试宝典'}
       ],
