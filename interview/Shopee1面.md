@@ -1,8 +1,8 @@
-### 介绍jsonp、以及他的原理
+## 介绍jsonp、以及他的原理
 
 [JSONP](https://www.cnblogs.com/lemontea/archive/2012/12/11/2812268.html)
 
-### 什么时候会引起跨域
+## 什么时候会引起跨域
 
 同源策略：  
 | URL | 说明 | 是否允许通信 |
@@ -42,7 +42,7 @@
 
 > 参考[关于跨域，你想知道的全在这里](https://zhuanlan.zhihu.com/p/25778815)
 
-### iframe的数据传递
+## iframe的数据传递
 
 > 参考[iframe父子页面之间的通信](https://www.jianshu.com/p/90cd15e0699f)
 
@@ -76,14 +76,14 @@
 <button id="button" onclick="callFather()"> 调用爸爸的方法 </button>
 ```
 
-### 大文件下载用什么请求
+## 大文件下载用什么请求
 
-### get和post的区别
+## get和post的区别
 
 [get和post到底有什么区别](https://www.zhihu.com/question/28586791)
 
 
-### https交换过程
+## https交换过程
 
 <img src="./img/https.png"/>
 
@@ -96,7 +96,7 @@
 7. 传输加密后的信息
 8. 客户端解密信息 客户端用之前生产的私钥解密服务端传过来的信息，
 
-#### 对称加密与非对称加密
+### 对称加密与非对称加密
 
 对称加密： 值得就是加、解密使用的都是同一串密钥，。对称加密只有一个密钥作为私钥。
 常见的对称加密算法：DES,AES等。  
@@ -105,7 +105,7 @@
 非对称加密优缺点：安全行更高，公钥是公开的，密钥是自己保存的，不需要将私钥给别人。缺点：加密和解密花费时间长、速度慢，只适合对少量数据进行加密。
 
 
-#### http请求头构成
+### http请求头构成
 
 > 参考[HTTP的结构](https://juejin.im/post/5cda1426f265da038733c22e)
 
@@ -129,11 +129,11 @@ HTTP消息报头包括普通报头、请求报头、响应报头、实体报头�
 - 实体报头
 Content-Encoding、Content-Language、Content-Length、Content-Type、Last-Modified、Expires
 
-### http缓存
+## http缓存
 
 [http缓存详解](https://juejin.im/entry/599afbe5f265da247c4ee6e3)
 
-#### if-modified-since 和last-modofied的区别
+### if-modified-since 和last-modofied的区别
 
 > 参考[浏览器缓存详解](https://blog.csdn.net/eroswang/article/details/8302191)
 
@@ -149,7 +149,7 @@ If-Modified-Since:Tue, 24 Feb 2009 08:01:04 GMT
 
 如果服务器端的资源没有变化，则自动返回HTTP304（NotChanged.）状态码，内容为空，这样就节省了传输数据量。当服务器端代码发生改变或者重启服务器时，则重新发出资源，返回和第一次请求时类似。从而保证不向客户端重复发出资源，也保证当服务器有变化时，客户端能够得到最新的资源。
 
-#### Etag是依据什么生成的
+### Etag是依据什么生成的
 
 文件内容  
 
@@ -171,7 +171,7 @@ If-None-Match:“5d8c72a5edda8d6a:3239“
 
 ,这样，Client端等于Cache了两份，服务器端就会比对2者的etag。如果If-None-Match为False，不返回200，返回304(Not Modified) Response。
 
-#### cache-control 是绝对时间还是相对时间
+### cache-control 是绝对时间还是相对时间
 
 Expires与Cache-Control原理：  
 他们都是服务端用来约定和客户端的有效时间，格式如下：
@@ -194,18 +194,18 @@ Cache-Control: max-age = 31536000
 
 [Cache-Control字段值详解](https://juejin.im/post/5c2d6c9ae51d450cf4195a08)
 
-### map和Object的区别
+## map和Object的区别
 
 1. Object对象有原型，也就是说他有默认的key值在对象上面， 除非我们使用Object.create(null)创建一个没有原型的对象
 2. 在Object对象中， 只能把String和Symbol作为key值， 但是在Map中，key值可以是任何基本类型(String, Number, Boolean, undefined, NaN….)，或者对象(Map, Set, Object, Function , Symbol , null….)
 3. 通过Map中的size属性， 可以很方便地获取到Map长度， 要获取Object的长度， 你只能用别的方法了
 Map实例对象的key值可以为一个数组或者一个对象，或者一个函数，比较随意 ，而且Map对象实例中数据的排序是根据用户push的顺序进行排序的， 而Object实例中key,value的顺序就是有些规律了， (他们会先排数字开头的key值，然后才是字符串开头的key值)
 
-#### 什么时候用map
+### 什么时候用map
  
 [Object与Map的异同及使用场景](https://juejin.im/post/5c7f6251f265da2dce1f68d3)
 
-### Commonjs和es 6 import 除了写法上还有什么区别
+## Commonjs和es 6 import 除了写法上还有什么区别
 
 import静态编译，import的地址不能通过计算
 
@@ -217,14 +217,14 @@ require(url)不会报错
 
 所以require都会用在动态加载的时候
 
-### requestAnimationFrame和setTimeout的区别、为什么RAF会比较好
+## requestAnimationFrame和setTimeout的区别、为什么RAF会比较好
 
 window.requestAnimationFrame这个方法是用来在页面重绘之前，通知浏览器调用一个指定的函数  
 <img src="./img/requestAnimationFrame.png"/>
 相当一部分的浏览器显示频率是16.7ms, 一秒60帧，如果我们设置setTimeout 10ms就会出现过度绘制的状态，也就是掉帧  
 requestAnimationFrame就是跟着浏览器的绘制走，如果浏览器设备绘制间隔是16.7ms，那我们就用这个间隔绘制；如果浏览器间隔是10ms，就用10ms，这样就不会存在掉帧的现象
 
-### setTimeout和setInterval哪个更准确
+## setTimeout和setInterval哪个更准确
 
 [setTimeout与setInterval区别](https://jixianqianduan.com/frontend-javascript/2014/08/25/js-settimeout-setinterval.html)
 
@@ -232,11 +232,11 @@ requestAnimationFrame就是跟着浏览器的绘制走，如果浏览器设备�
 
 
 
-### 实现一个拖拽组件、怎么防止频繁触发，你会改变哪个属性达到效果
+## 实现一个拖拽组件、怎么防止频繁触发，你会改变哪个属性达到效果
 
 函数节流，改变transfrom属性
 
-### 手写一个节流函数
+## 手写一个节流函数
 
 ```js
 function throttle(fn, wait) {
@@ -252,7 +252,7 @@ function throttle(fn, wait) {
 }
 ```
 
-### 有以下一个数组，请实现一个单链表
+## 有以下一个数组，请实现一个单链表
 
 ```js
 let a = [1,2,3]
@@ -416,6 +416,6 @@ class LinkedList {
 }
 ```
 
-### 数组和链表搜索、删除、查找的复杂度
+## 数组和链表搜索、删除、查找的复杂度
 
-### 热更新如何做到增量更新、如何做到强制更新
+## 热更新如何做到增量更新、如何做到强制更新
