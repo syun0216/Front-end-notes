@@ -7,6 +7,9 @@ module.exports = {
   head: [
     ['link', { rel: 'shortcut icon', type: "image/x-icon", href: `./favicon.ico` }]
   ],
+  markdown: {
+    lineNumbers: true
+  },
   // plugins: ['@vuepress/back-to-top'],
   themeConfig: {
     repo: 'https://github.com/syun0216/Front-end-notes',
@@ -221,10 +224,11 @@ module.exports = {
       '/web/': [
         '/web/IP十问',
         '/web/http笔试',
-        '/web/http协议',
+        '/web/http协议'
       ],
       '/project/': [
         {title: '浏览器原理', path: '/project/浏览器原理', collapsable: false},
+        {title: '浏览器缓存其实就这么一回事儿', path: '/project/浏览器缓存其实就这么一回事儿', collapsable: false},
         {title: '浏览器兼容性问题', path: '/project/浏览器兼容性问题', collapsable: false},
         {title: '移动端开发兼容性适配', path: '/project/移动端开发兼容性适配', collapsable: false},
         {title: '前端性能优化', path: '/project/前端性能优化', collapsable: false},
@@ -238,9 +242,10 @@ module.exports = {
         {title: 'leetcode题解', collapsable: false, children: [
           {title: '两数之和',path: '/algorithm/leetcode题解/两数之和', collapsable: false},
           {title: '判断整数是否为回文串',path: '/algorithm/leetcode题解/判断整数是否为回文串', collapsable: false},
-          {title: '无重复字符的最长子串',path: '/algorithm/leetcode题解/无重复字符的最长子串', collapsable: false}
+          {title: '无重复字符的最长子串',path: '/algorithm/leetcode题解/无重复字符的最长子串', collapsable: false},
           ],
         },
+        '/algorithm/Js链表',
         '/algorithm/JavaScript排序'
       ],
       '/framework/': [
