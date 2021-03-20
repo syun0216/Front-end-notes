@@ -7,9 +7,6 @@ module.exports = {
   head: [
     ['link', { rel: 'shortcut icon', type: "image/x-icon", href: `./favicon.ico` }]
   ],
-  markdown: {
-    lineNumbers: true
-  },
   // plugins: ['@vuepress/back-to-top'],
   themeConfig: {
     repo: 'https://github.com/syun0216/Front-end-notes',

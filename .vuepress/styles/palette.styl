@@ -5,24 +5,24 @@ $codeBgColor = #282c34//默认背景颜色
 $backgroundColor = #91d5ff 
 
 .page-nav, .page-edit, .theme-default-content:not(.custom) {
-    max-width: 1000px;
+    max-width: 1200px;
 }
 
 .nav-item > a:not(.external):hover, .nav-item > a:not(.external).router-link-active {
     margin-bottom: -2px;
     border-bottom: none;
     color: #FD971F;
-    border: 1px dotted #FD971F;
 }
 
 .custom-block.tip {
-    background-color: #F8F8F0;
+    background-color: #282c34;
+    color: #fff;
     border-color: #AE81FF;
     border-radius: 6px;
 }
 
 .custom-block .custom-block-title, .custom-block p {
-    color: #000c18;
+    color: rgba(255,255,255,0.7);
 }
 
 img{
@@ -37,10 +37,6 @@ body {
 
 body, .navbar, .links, .sidebar, tr:nth-child(2n){
     background-color: #000c18;
-}
-
-a.sidebar-link{
-    color: #F92672;
 }
 
 .navbar .links {
@@ -59,12 +55,14 @@ a.sidebar-link{
 
 .home .hero .action-button {
     background-color: transparent;
-    border: 1px dotted #AE81FF;
+    border: 1px dotted #F92672;
     color: #F92672;
 }
 
 .home .hero .action-button:hover {
-    color: #fff;
+    color: #FD971F;
+    background-color: transparent;
+    border: 1px dotted #FD971F;
 }
 
 .home .hero .description {
@@ -85,4 +83,21 @@ h2, h3, h4, h5 {
 
 .home .footer {
     color: #FD971F;
+}
+
+a.sidebar-link.active {
+    border-left-color: transparent;
+    color: #FD971F;
+}
+
+a.sidebar-link:hover {
+    color: #FD971F;
+}
+
+a.sidebar-link{
+    color: #AE81FF;
+}
+
+a {
+    color: #F92672;
 }
