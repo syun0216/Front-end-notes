@@ -420,12 +420,61 @@ var isHappy = function(n) {
 链接：https://leetcode-cn.com/problems/reverse-linked-list
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 
+<span style="color: #ff5050;font-weight: bold;">解答:</span>
+
+**推荐一个题解的视频，图解的很清楚** [反转链表图解](https://leetcode-cn.com/problems/reverse-linked-list/solution/shi-pin-jiang-jie-die-dai-he-di-gui-hen-hswxy/) 
+
+- 双指针法(迭代)
+
+```js
+/**
+ * Definition for singly-linked list.
+ * function ListNode(val, next) {
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.next = (next===undefined ? null : next)
+ * }
+ */
+/**
+ * @param {ListNode} head
+ * @return {ListNode}
+ */
+
+var reverseList = function(head) {
+    if(!head) return null;
+    let pre = null;
+    let cur = head;
+    while(cur) {
+        let next = cur.next;
+        cur.next = pre;
+        pre = cur;
+        cur = next;
+    }
+    return pre;
+};
+```
+- 递归法
+
+```js
+var reverseList = function(head) { 
+    if(!head || !head.next) return head;  // 递归进行的前置条件
+    let p = reverseList(head.next);
+    /* 递归的后置处理 
+    比如我们有 7->8->9->null这个单链表，由于前置条件的限制，我们可以到达8->9->null这一步，
+    此时我们的head为8，那么head.next.next=head 即将8->9->null变为8->9->8;
+    然后head.next=null即将8->9断开，然后我们就得到了9->8的反转链表，如此类推
+    */
+    head.next.next = head; 
+    head.next = null;
+    return p;
+}
+```
+
 --------------------------
 #### 翻转区间的链表 &nbsp; [leetcode 92](https://leetcode-cn.com/problems/reverse-linked-list-ii/)  
 
 给你单链表的头指针 head 和两个整数 left 和 right ，其中 left <= right 。请你反转从位置 left 到位置 right 的链表节点，返回 反转后的链表 。
 
-示例 1：
+示例 1：    
 <img src="https://assets.leetcode.com/uploads/2021/02/19/rev2ex2.jpg"/>
 
 ```js
@@ -448,6 +497,15 @@ var isHappy = function(n) {
 来源：力扣（LeetCode）
 链接：[https://leetcode-cn.com/problems/reverse-linked-list-ii](https://leetcode-cn.com/problems/reverse-linked-list-ii)
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+
+<span style="color: #ff5050;font-weight: bold;">解答:</span>
+
+**推荐leetcode官方的解题思路** [反转区间链表](https://leetcode-cn.com/problems/reverse-linked-list-ii/solution/fan-zhuan-lian-biao-ii-by-leetcode-solut-teyq/) 
+
+- 穿针引线
+- 一次遍历「穿针引线」反转链表（头插法）
+
+
 
 --------------------------
 #### k个一组的翻转链表 &nbsp; [leetcode 25](https://leetcode-cn.com/problems/reverse-nodes-in-k-group/)  
