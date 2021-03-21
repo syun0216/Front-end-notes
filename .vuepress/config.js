@@ -10,6 +10,19 @@ module.exports = {
   markdown: {
     lineNumbers: true
   },
+  theme: 'vdoing', // 使用依赖包主题
+  plugins: [
+    [
+      'one-click-copy',
+      {
+        // 代码块复制按钮
+        copySelector: ['div[class*="language-"] pre', 'div[class*="aside-code"] aside'], // String or Array
+        copyMessage: '复制成功', // default is 'Copy successfully and then paste it for use.'
+        duration: 1000, // prompt message display time.
+        showInMobile: false, // whether to display on the mobile side, default: false.
+      },
+    ],
+  ],
   // plugins: ['@vuepress/back-to-top'],
   themeConfig: {
     repo: 'https://github.com/syun0216/Front-end-notes',
@@ -298,6 +311,24 @@ module.exports = {
         {title: '高性能建站', path: '/books/高性能网站建设指南/高性能网站建设指南'},
         {title: '冴羽系列文章链接', path: '/books/冴羽系列文章链接'},
       ],
-    }
+    },
+    author: {
+      // 文章默认的作者信息，可在md文件中单独配置此信息 String | {name: String, link: String}
+      name: 'junwen', // 必需
+      link: 'https://github.com/syun0216', // 可选的
+    },
+    blogger: {
+      // 博主信息，显示在首页侧边栏
+      avatar: 'https://avatars.githubusercontent.com/u/18444325?s=460&u=6548250d9e4ad26571995008d5e74401d4b2243b&v=4',
+      name: 'Syun0216',
+      slogan: '多读书多种树',
+    },
+    category: true,
+    footer: {
+      // 页脚信息
+      createYear: 2019, // 博客创建年份
+      copyrightInfo:
+        'Syun',
+    },
   },
 }

@@ -1,3 +1,11 @@
+---
+title: Promise&Generator
+date: 2021-03-20 18:39:52
+permalink: /pages/c8677a/
+categories:
+tags:
+  - 
+---
 Promise & Generator 简单入门
 
 > 参考[Promise & Generator——幸福地用同步方法写异步 JavaScript](https://segmentfault.com/a/1190000007255138)

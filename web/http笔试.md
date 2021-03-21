@@ -1,3 +1,11 @@
+---
+title: http笔试
+date: 2021-03-20 18:39:52
+permalink: /pages/34aa02/
+categories:
+tags:
+  - 
+---
 ## http笔试
 
 ### 缓存

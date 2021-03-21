@@ -1,3 +1,11 @@
+---
+title: 详解requestAnimationFrame
+date: 2021-03-20 18:39:52
+permalink: /pages/64db0d/
+categories:
+tags:
+  - 
+---
 ## requestAnimationFrame详解
 
 requestAnimationFrame是浏览器用于定时循环操作的一个接口，类似setTimeout，主要是用途是按帧对网页进行重绘。  

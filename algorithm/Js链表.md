@@ -1,3 +1,11 @@
+---
+title: Js链表
+date: 2021-03-20 18:39:52
+permalink: /pages/c29ced/
+categories:
+tags:
+  - 
+---
 ## 链表(Linked-list)
 
 链表是一组节点组成的集合，每个节点都使用一个对象的引用来指向它的后一个节点。指向另一节点的引用讲做链。

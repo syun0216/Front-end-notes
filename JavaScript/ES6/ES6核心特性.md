@@ -1,3 +1,11 @@
+---
+title: ES6核心特性
+date: 2021-03-20 18:39:52
+permalink: /pages/780ea1/
+categories:
+tags:
+  - 
+---
 ES6核心特性
 
 > 参考[ES6核心特性](https://segmentfault.com/a/1190000017139065)

@@ -1,3 +1,11 @@
+---
+title: Vue举一反三
+date: 2021-03-20 18:39:52
+permalink: /pages/c390d1/
+categories:
+tags:
+  - 
+---
 ### 对MVVM的理解？
 
 MVVM: Model-View-ViewModel  

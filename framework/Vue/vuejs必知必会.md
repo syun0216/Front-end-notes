@@ -1,3 +1,11 @@
+---
+title: vuejs必知必会
+date: 2021-03-20 18:39:52
+permalink: /pages/f698bb/
+categories:
+tags:
+  - 
+---
 ### 组件data为什么是函数
 
 因为data的私有性，所以必须return一个新对象。

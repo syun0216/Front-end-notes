@@ -1,3 +1,11 @@
+---
+title: 虚拟DOM原理理解
+date: 2021-03-20 18:39:52
+permalink: /pages/8df2fb/
+categories:
+tags:
+  - 
+---
 ## 什么是virtual dom
 
 Virtual DOM是对DOM的抽象，本质是上是js对象，这个对象就是更加轻量级的对DOM的描述。

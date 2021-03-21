@@ -1,3 +1,11 @@
+---
+title: http协议
+date: 2021-03-20 18:39:52
+permalink: /pages/13759c/
+categories:
+tags:
+  - 
+---
 ## HTTP协议
 
 ### HTTP有哪些方法

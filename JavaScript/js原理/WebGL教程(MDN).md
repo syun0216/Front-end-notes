@@ -1,3 +1,11 @@
+---
+title: WebGL教程(MDN)
+date: 2021-03-20 18:39:52
+permalink: /pages/aa8fa2/
+categories:
+tags:
+  - 
+---
 # WebGL教程
 
 ## 初识WebGL

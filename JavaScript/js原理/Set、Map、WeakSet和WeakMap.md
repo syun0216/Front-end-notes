@@ -1,3 +1,11 @@
+---
+title: Set、Map、WeakSet和WeakMap
+date: 2021-03-20 18:39:52
+permalink: /pages/d980a4/
+categories:
+tags:
+  - 
+---
 ### 介绍Set、Map、WeakSet和WeakMap的区别？
 
 Set和Map主要的应用场景在于数据重组和数据存储  

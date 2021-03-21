@@ -1,3 +1,11 @@
+---
+title: HTML5安全
+date: 2021-03-20 18:39:52
+permalink: /pages/7f6fc3/
+categories:
+tags:
+  - 
+---
 ### HTML5新标签
 ---
 一些XSS Filter如果建立了一个黑名单的话，则可能就不会覆盖到HTML5新增的标签和功能，从而避免发生XSS。

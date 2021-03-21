@@ -1,3 +1,11 @@
+---
+title: http强制缓存和协商缓存
+date: 2021-03-20 18:39:52
+permalink: /pages/a5ab6f/
+categories:
+tags:
+  - 
+---
 ### 什么是缓存?
 
 浏览器缓存(Brower Caching)是浏览器对之前请求过的文件进行缓存，以便下一次访问时重复使用，节省带宽，提高访问速度，降低服务器压力  

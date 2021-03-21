@@ -1,3 +1,11 @@
+---
+title: ES6 Decorator
+date: 2021-03-20 18:39:52
+permalink: /pages/d9ebac/
+categories:
+tags:
+  - 
+---
  探寻ECMAScript的装饰器Decorator
 
 > 参考[探寻ECMAScript的装饰器Decorator](https://github.com/rccoder/blog/issues/23)

@@ -1,3 +1,11 @@
+---
+title: Canvas api详解
+date: 2021-03-20 18:39:52
+permalink: /pages/12cc8e/
+categories:
+tags:
+  - 
+---
 ## Canvas API 详解
 
 > Canvas API(画布)用于在网页实时生成图像，并且可以操作图像内容，基本上它是一个可以用 js 操作的位图(bitmap)

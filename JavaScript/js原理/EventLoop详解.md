@@ -1,3 +1,11 @@
+---
+title: EventLoop详解
+date: 2021-03-20 18:39:52
+permalink: /pages/c49367/
+categories:
+tags:
+  - 
+---
 ## Event Loop详解
 
 Event loop 即时间循环，是指浏览器或Node的解决JavaScript单线程运行时不会阻塞的一直机制，也就是我们经常使用异步的原理。

@@ -1,3 +1,11 @@
+---
+title: README
+date: 2021-03-20 18:39:52
+permalink: /pages/c210c9/
+categories:
+tags:
+  - 
+---
 # 写在最前
 
 &nbsp;&nbsp;&nbsp;&nbsp;深入react技术栈应该是我看过比较好的关于react的书籍了。本书讲到的技术都比较深，可能会适合有一点react基础的同学。

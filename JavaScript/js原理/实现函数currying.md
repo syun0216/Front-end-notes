@@ -1,3 +1,11 @@
+---
+title: 实现函数currying
+date: 2021-03-20 18:39:52
+permalink: /pages/a8d5a8/
+categories:
+tags:
+  - 
+---
 ### 函数柯里化实现
 
 ```js

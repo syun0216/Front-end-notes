@@ -1,3 +1,11 @@
+---
+title: IP十问
+date: 2021-03-20 18:39:52
+permalink: /pages/6f3543/
+categories:
+tags:
+  - 
+---
 # TCP/IP 十问
 
 > 本文摘抄自掘金[Ruheng](https://juejin.im/user/58ca03b7128fe1006c7bf8ef)的[关于 TCP/IP，必知必会的十个问题](https://juejin.im/post/598ba1d06fb9a03c4d6464ab)

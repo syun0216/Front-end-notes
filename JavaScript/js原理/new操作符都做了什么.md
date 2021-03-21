@@ -1,3 +1,11 @@
+---
+title: new操作符都做了什么
+date: 2021-03-20 18:39:52
+permalink: /pages/6cd659/
+categories:
+tags:
+  - 
+---
 ### new操作符都做了什么
 
 1. 创建一个空对象，并且this变量引用该对象 // let target = {}

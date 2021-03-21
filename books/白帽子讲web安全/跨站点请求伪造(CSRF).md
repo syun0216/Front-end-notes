@@ -1,3 +1,11 @@
+---
+title: 跨站点请求伪造(CSRF)
+date: 2021-03-20 18:39:52
+permalink: /pages/5ea602/
+categories:
+tags:
+  - 
+---
 ### CSRF进阶
 ---
 1. 浏览器的cookie策略：浏览器的cookie分为两种：Session Cookie（临时，浏览器关闭后消失），Third-party Cookie 本地cookie（Expire time到期消失）。如果浏览器从一个域的页面中，要加载另外一个域的资源，浏览器会阻止Third-party Cookie的发送。

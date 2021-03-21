@@ -1,3 +1,11 @@
+---
+title: Shopee1面
+date: 2021-03-20 18:39:52
+permalink: /pages/10c690/
+categories:
+tags:
+  - 
+---
 ## 介绍jsonp、以及他的原理
 
 [JSONP](https://www.cnblogs.com/lemontea/archive/2012/12/11/2812268.html)

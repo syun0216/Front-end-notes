@@ -1,3 +1,11 @@
+---
+title: DOM事件
+date: 2021-03-20 18:39:52
+permalink: /pages/185d72/
+categories:
+tags:
+  - 
+---
 ## DOM
 
 ### DOM的事件模型是什么？

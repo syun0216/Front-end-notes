@@ -1,3 +1,11 @@
+---
+title: js中轻松遍历对象属性的几种方式
+date: 2021-03-20 18:39:52
+permalink: /pages/662607/
+categories:
+tags:
+  - 
+---
 参考[https://juejin.im/post/5d48c275f265da03b12032a1](https://juejin.im/post/5d48c275f265da03b12032a1)
 
 ### 自身可枚举属性

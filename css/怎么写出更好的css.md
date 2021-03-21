@@ -1,3 +1,11 @@
+---
+title: 怎么写出更好的css
+date: 2021-03-20 18:39:52
+permalink: /pages/493b2e/
+categories:
+tags:
+  - 
+---
 怎样写出更好的css
 
 > 参考[怎样才能写出更好的 CSS？](https://mp.weixin.qq.com/s/4QXqTvFd1YbsWL9DQfbdhg)

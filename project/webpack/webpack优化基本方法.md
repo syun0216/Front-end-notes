@@ -1,3 +1,11 @@
+---
+title: webpack优化基本方法
+date: 2021-03-20 18:39:52
+permalink: /pages/14a436/
+categories:
+tags:
+  - 
+---
 ## webpack优化基本方法
 
 > 参考[webpack优化的一些基本方法](https://juejin.im/post/5d68d6b0e51d4561a60d9e1c)

@@ -1,123 +1,68 @@
+//***vdoing主题-样式变量***//
 
-$accentColor = rgba(255,255,255,0.7)//默认主题颜色
-$borderColor = rgba(255,255,255,0.7)//默认边框颜色
-$codeBgColor = #282c34//默认背景颜色
-$backgroundColor = #91d5ff 
+// 以下注释的变量仅供参考，主题使用的最新变量请查看：https://github.com/xugaoyi/vuepress-theme-vdoing/blob/master/theme-vdoing/styles/palette.styl
+// 你可以在这个文件内修改这些变量的值
 
-.page-nav, .page-edit, .theme-default-content:not(.custom) {
-    max-width: 1200px;
-}
+// // 颜色
 
-.nav-item > a:not(.external):hover, .nav-item > a:not(.external).router-link-active {
-    margin-bottom: -2px;
-    border-bottom: none;
-    color: #FD971F;
-}
+// $bannerTextColor = #fff // 首页banner区(博客标题)文本颜色
+ $accentColor = #DA5961
+// $activeColor = #ff5722
+// $arrowBgColor = #ccc
+// $badgeTipColor = #42b983
+// $badgeWarningColor = darken(#ffe564, 35%)
+// $badgeErrorColor = #DA5961
 
-.custom-block.tip {
-    background-color: #282c34;
-    color: #fff;
-    border-color: rgba(255,255,255,0.7);
-    border-radius: 6px;
-}
+// // 布局
+// $navbarHeight = 3.6rem
+// $sidebarWidth = 18rem
+// $contentWidth = 860px
+// $homePageWidth = 1100px
+// $rightMenuWidth = 230px // 右侧菜单
 
-.custom-block .custom-block-title, .custom-block p {
-    color: rgba(255,255,255,0.7);
-}
+// // 代码块
+// $lineNumbersWrapperWidth = 2.5rem
 
-img{
-    border-radius: 6px;
-    filter: brightness(0.8);
-}
+// // 浅色模式
+// .theme-mode-light
+//   --bodyBg: #f4f4f4
+//   --mainBg: rgba(255,255,255,1)
+//   --sidebarBg: rgba(255,255,255,.8)
+//   --blurBg: rgba(255,255,255,.9)
+//   --textColor: #004050
+//   --textLightenColor: #0085AD
+//   --borderColor: rgba(0,0,0,.15)
+//   // 代码块浅色主题
+//   --codeBg: #f6f6f6
+//   --codeColor: #525252
+//   codeThemeLight()
+//   // // 代码块深色主题
+//   // --codeBg: #252526
+//   // --codeColor: #fff
+//   // codeThemeDark()
 
-body {
-    min-height: 100vh;
-    color: rgba(255,255,255,0.7);
-}
+// // 深色模式
+// .theme-mode-dark
+//   --bodyBg: rgb(39,39,43)
+//   --mainBg: rgba(30,30,34,1)
+//   --sidebarBg: rgba(30,30,34,.8)
+//   --blurBg: rgba(30,30,34,.8)
+//   --textColor: rgb(140,140,150)
+//   --textLightenColor: #0085AD
+//   --borderColor: #2C2C3A
+//   --codeBg: #252526
+//   --codeColor: #fff
+//   codeThemeDark()
 
-body, .navbar, .links, .sidebar, tr:nth-child(2n){
-    background-color: #000c18;
-}
-
-.navbar .links {
-    background-color: #000c18;
-}
-
-.search-box input {
-    background-color: #000c18;
-    border-color: rgba(255,255,255,0.7);
-    color: #FD971F;
-}
-
-.navbar .site-name {
-    color: rgba(255,255,255,0.7);
-}
-
-.home .hero .action-button {
-    background-color: transparent;
-    border: 1px dotted #F92672;
-    color: #F92672;
-}
-
-.home .hero .action-button:hover {
-    color: #FD971F;
-    background-color: transparent;
-    border: 1px dotted #FD971F;
-}
-
-.home .hero .description {
-    color: #F92672;
-}
-
-.home .feature h2 {
-    color: #FD971F;
-}
-
-.home .feature p {
-    color: #FD971F;
-}
-
-h2, h3, h4, h5 {
-    color: #FD971F;
-}
-
-.home .footer {
-    color: #FD971F;
-}
-
-a.sidebar-link.active {
-    border-left-color: transparent;
-    color: #FD971F;
-}
-
-a.sidebar-link:hover {
-    color: #FD971F;
-}
-
-a.sidebar-link{
-    color: rgba(255,255,255,0.7);
-}
-
-a {
-    color: #F92672;
-}
-
-::-webkit-scrollbar
-{
-    width: 6px;
-    height: 6px;
-}
-::-webkit-scrollbar-track-piece
-{
-    background-color: #000c18;
-}
-::-webkit-scrollbar-thumb:vertical
-{
-    height: 5px;
-    background-color: rgba(255,255,255,0.7);
-}
-::-webkit-scrollbar-thumb:horizontal
-{
-    width: 5px;
-    background-color: #000c18;
-}
+// // 阅读模式
+// .theme-mode-read
+//   --bodyBg: rgb(240,240,208)
+//   --mainBg: rgba(245,245,213,1)
+//   --sidebarBg: rgba(245,245,213,.8)
+//   --blurBg: rgba(245,245,213,.9)
+//   --textColor: #004050
+//   --textLightenColor: #0085AD
+//   --borderColor: rgba(0,0,0,.15)
+//   --codeBg: #282c34
+//   --codeColor: #fff
+//   codeThemeDark()

@@ -836,6 +836,25 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
+"@better-scroll/core@^2.0.0-beta.6", "@better-scroll/core@^2.2.1":
+  version "2.2.1"
+  resolved "https://npm.garenanow.com/@better-scroll%2fcore/-/core-2.2.1.tgz#3e35b1f6886c712cd9a6baf6aa0b31c754721414"
+  integrity sha512-5Uap8j9tdatTVGnWKLCqzp1yEzmRKxaciURYrgng7FkjkBst5hR8YyS+YbBocUT1pAjeGS6c5Az2vaSmvN3yug==
+  dependencies:
+    "@better-scroll/shared-utils" "^2.2.1"
+
+"@better-scroll/shared-utils@^2.2.1":
+  version "2.2.1"
+  resolved "https://npm.garenanow.com/@better-scroll%2fshared-utils/-/shared-utils-2.2.1.tgz#eb024feee1d37598a9b04fc18ca0d8b31f34f704"
+  integrity sha512-EDkIp/93CcdMYyVfdIqga1edErmolEQvi9xI0lmBxYl1dSBGZxVQgAmBunqw7zXODwJOAWcS7mhcIGu0H/oS5Q==
+
+"@better-scroll/slide@^2.0.0-beta.6":
+  version "2.2.1"
+  resolved "https://npm.garenanow.com/@better-scroll%2fslide/-/slide-2.2.1.tgz#165d80d7b0673b715226ee87ee722755be1241ef"
+  integrity sha512-RoYytgKue38EJP0u3Lk8fnW9hbggNg2x8FDVGbvNzkTy4T0rMdfkls5DisnCFuZaC8O6t/mCM/FWZabVVkDG3A==
+  dependencies:
+    "@better-scroll/core" "^2.2.1"
+
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
   resolved "https://npm.garenanow.com/@mrmlnc%2freaddir-enhanced/-/readdir-enhanced-2.2.1.tgz#524af240d1a360527b730475ecfa1344aa540dde"
@@ -1146,6 +1165,11 @@
   version "1.8.0"
   resolved "https://npm.garenanow.com/@vuepress%2fplugin-search/-/plugin-search-1.8.0.tgz#d10cc04cff7467829b2e2e896b7e72a5ebc27ce1"
   integrity sha512-LlOCPg7JJ3I9WEpiBU8vCEFp6I5sa3OBu6SFHk+uK9iyKHwJYdRs4VK9x+igG40Rt/OIDRDo3c9SbLX/E/kqeA==
+
+"@vuepress/plugin-search@^1.2.0":
+  version "1.8.2"
+  resolved "https://npm.garenanow.com/@vuepress%2fplugin-search/-/plugin-search-1.8.2.tgz#74b92f663acf6b4560e15dc0442a84c4e874e206"
+  integrity sha512-JrSJr9o0Kar14lVtZ4wfw39pplxvvMh8vDBD9oW09a+6Zi/4bySPGdcdaqdqGW+OHSiZNvG+6uyfKSBBBqF6PA==
 
 "@vuepress/shared-utils@1.8.0", "@vuepress/shared-utils@^1.2.0":
   version "1.8.0"
@@ -2074,6 +2098,14 @@ chalk@^3.0.0:
   version "3.0.0"
   resolved "https://npm.garenanow.com/chalk/-/chalk-3.0.0.tgz#3f73c2bf526591f574cc492c51e2456349f844e4"
   integrity sha512-4D3B6Wf41KOYRFdszmDqMCGq5VV/uMAB273JILmO+3jAlh8X4qDtdtgCR3fxtbLEMzSx22QdhnDcJvu2u1fVwg==
+  dependencies:
+    ansi-styles "^4.1.0"
+    supports-color "^7.1.0"
+
+chalk@^4.0.0:
+  version "4.1.0"
+  resolved "https://npm.garenanow.com/chalk/-/chalk-4.1.0.tgz#4e14870a618d9e2edd97dd8345fd9d9dc315646a"
+  integrity sha512-qwx12AxXe2Q5xQ43Ac//I6v5aXTipYrSESdOgzrN+9XjgEpyjpKuvSGaN4qE93f7TQTlerQQ8S+EQ0EyDoVL1A==
   dependencies:
     ansi-styles "^4.1.0"
     supports-color "^7.1.0"
@@ -3692,6 +3724,11 @@ good-listener@^1.2.2:
   dependencies:
     delegate "^3.1.2"
 
+good-storage@^1.1.1:
+  version "1.1.1"
+  resolved "https://npm.garenanow.com/good-storage/-/good-storage-1.1.1.tgz#081501c01607d5fee2a214f94e8f5f9cb994789f"
+  integrity sha512-+0UEpRT03fJgEJoeTVVz41ISC5+jaQrDIWatQ4BoDQfOiBBsjNanymi9sAtLFdEAADQN0FYR8mGpeqxSCe8oXQ==
+
 got@^9.6.0:
   version "9.6.0"
   resolved "https://npm.garenanow.com/got/-/got-9.6.0.tgz#edf45e7d67f99545705de1f7bbeeeb121765ed85"
@@ -4542,6 +4579,13 @@ json-stringify-safe@~5.0.1:
   version "5.0.1"
   resolved "https://npm.garenanow.com/json-stringify-safe/-/json-stringify-safe-5.0.1.tgz#1296a2d58fd45f19a0f6ce01d65701e2c735b6eb"
   integrity sha1-Epai1Y/UXxmg9s4B1lcB4sc1tus=
+
+json2yaml@^1.1.0:
+  version "1.1.0"
+  resolved "https://npm.garenanow.com/json2yaml/-/json2yaml-1.1.0.tgz#5414d907f9816586b80c513ec2e3aeb2ab819a6c"
+  integrity sha1-VBTZB/mBZYa4DFE+wuOusquBmmw=
+  dependencies:
+    remedial "1.x"
 
 json3@^3.3.3:
   version "3.3.3"
@@ -6280,6 +6324,11 @@ relateurl@0.2.x:
   resolved "https://npm.garenanow.com/relateurl/-/relateurl-0.2.7.tgz#54dbf377e51440aca90a4cd274600d3ff2d888a9"
   integrity sha1-VNvzd+UUQKypCkzSdGANP/LYiKk=
 
+remedial@1.x:
+  version "1.0.8"
+  resolved "https://npm.garenanow.com/remedial/-/remedial-1.0.8.tgz#a5e4fd52a0e4956adbaf62da63a5a46a78c578a0"
+  integrity sha512-/62tYiOe6DzS5BqVsNpH/nkGlX45C/Sp6V+NtiN6JQNS1Viay7cWkazmRkrQrdFj2eshDe96SIQNIoMxqhzBOg==
+
 remove-trailing-separator@^1.0.1:
   version "1.1.0"
   resolved "https://npm.garenanow.com/remove-trailing-separator/-/remove-trailing-separator-1.1.0.tgz#c24bce2a283adad5bc3f58e0d48249b92379d8ef"
@@ -6981,7 +7030,7 @@ stylus-loader@^3.0.2:
     lodash.clonedeep "^4.5.0"
     when "~3.6.x"
 
-stylus@^0.54.8:
+stylus@^0.54.5, stylus@^0.54.8:
   version "0.54.8"
   resolved "https://npm.garenanow.com/stylus/-/stylus-0.54.8.tgz#3da3e65966bc567a7b044bfe0eece653e099d147"
   integrity sha512-vr54Or4BZ7pJafo2mpf0ZcwA74rpuYCZbxrHBsH8kbcXOwSfvBFwsRfpGO5OD5fhG5HDCFW737PKaawI7OqEAg==
@@ -7582,12 +7631,38 @@ vuepress-plugin-container@^2.0.2:
     "@vuepress/shared-utils" "^1.2.0"
     markdown-it-container "^2.0.0"
 
+vuepress-plugin-one-click-copy@^1.0.3:
+  version "1.0.3"
+  resolved "https://npm.garenanow.com/vuepress-plugin-one-click-copy/-/vuepress-plugin-one-click-copy-1.0.3.tgz#01627d5832849173286630006ac8b8ba041e2322"
+  integrity sha512-wCWGZ8Kpy7s0DDQRwmOgWgBWNdxtXw1irOtBPA7fRtq73bnPVZKW9kcHjZLQySgGymlEq1bmJLW5ipZLA22sxA==
+
 vuepress-plugin-smooth-scroll@^0.0.3:
   version "0.0.3"
   resolved "https://npm.garenanow.com/vuepress-plugin-smooth-scroll/-/vuepress-plugin-smooth-scroll-0.0.3.tgz#6eff2d4c186cca917cc9f7df2b0af7de7c8c6438"
   integrity sha512-qsQkDftLVFLe8BiviIHaLV0Ea38YLZKKonDGsNQy1IE0wllFpFIEldWD8frWZtDFdx6b/O3KDMgVQ0qp5NjJCg==
   dependencies:
     smoothscroll-polyfill "^0.4.3"
+
+vuepress-theme-vdoing@^1.8.1:
+  version "1.8.1"
+  resolved "https://npm.garenanow.com/vuepress-theme-vdoing/-/vuepress-theme-vdoing-1.8.1.tgz#aa99ba1eee46887ccd04128edbec14760dbd1710"
+  integrity sha512-dWneGNqqCvb4bTkjva1Q+iIMvtgW5wRhdHzSVq+lfbqh8Vm0MfzV/CEkSycKjRRJpmL1wIVOgsFRl6y+ZpKrxQ==
+  dependencies:
+    "@better-scroll/core" "^2.0.0-beta.6"
+    "@better-scroll/slide" "^2.0.0-beta.6"
+    "@vuepress/plugin-active-header-links" "^1.2.0"
+    "@vuepress/plugin-nprogress" "^1.2.0"
+    "@vuepress/plugin-search" "^1.2.0"
+    chalk "^4.0.0"
+    docsearch.js "^2.5.2"
+    good-storage "^1.1.1"
+    js-yaml "^3.13.1"
+    json2yaml "^1.1.0"
+    lodash "^4.17.15"
+    stylus "^0.54.5"
+    stylus-loader "^3.0.2"
+    vuepress-plugin-container "^2.0.2"
+    vuepress-plugin-smooth-scroll "^0.0.3"
 
 vuepress@^1.8.0:
   version "1.8.0"
