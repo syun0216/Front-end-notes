@@ -1,7 +1,7 @@
 module.exports = {
   title: "junwen's blog",
   dest: './docs',
-  base: '/myblog/',
+  base: '/Front-end-notes/',
   port: 9527,
   extraWatchFiles: ['./*'],
   head: [
