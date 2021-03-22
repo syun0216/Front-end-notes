@@ -3,8 +3,9 @@ title: 详解js的继承
 date: 2021-03-20 18:39:52
 permalink: /pages/4eb0e3/
 categories:
+  - js原理
 tags:
-  - 
+  - JavaScript
 ---
 JavaScript的继承可以分为两类：
 

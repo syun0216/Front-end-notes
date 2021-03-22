@@ -3,8 +3,10 @@ title: ES6核心特性
 date: 2021-03-20 18:39:52
 permalink: /pages/780ea1/
 categories:
+  - ES6
 tags:
-  - 
+  - ES6
+  - JavaScript
 ---
 ES6核心特性
 

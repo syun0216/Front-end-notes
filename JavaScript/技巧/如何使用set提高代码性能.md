@@ -3,8 +3,9 @@ title: 如何使用set提高代码性能
 date: 2021-03-20 18:39:52
 permalink: /pages/c41df5/
 categories:
+  - js技巧
 tags:
-  - 
+  - JavaScript
 ---
 参考[https://juejin.im/post/5d2284dc51882579df4a4cee](https://juejin.im/post/5d2284dc51882579df4a4cee)
 

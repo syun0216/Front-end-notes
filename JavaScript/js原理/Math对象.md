@@ -3,8 +3,9 @@ title: Math对象
 date: 2021-03-20 18:39:52
 permalink: /pages/f16f62/
 categories:
+  - js原理
 tags:
-  - 
+  - JavaScript
 ---
 ## JavaScript-Math对象详解
 

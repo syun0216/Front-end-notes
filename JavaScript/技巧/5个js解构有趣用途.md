@@ -3,8 +3,9 @@ title: 5个js解构有趣用途
 date: 2021-03-20 18:39:52
 permalink: /pages/d7ece9/
 categories:
+  - js技巧
 tags:
-  - 
+  - JavaScript
 ---
 参考 [https://juejin.im/post/5d5f29dde51d456216553519](https://juejin.im/post/5d5f29dde51d456216553519)
 

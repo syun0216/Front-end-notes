@@ -3,8 +3,9 @@ title: Set、Map、WeakSet和WeakMap
 date: 2021-03-20 18:39:52
 permalink: /pages/d980a4/
 categories:
+  - js原理
 tags:
-  - 
+  - JavaScript
 ---
 ### 介绍Set、Map、WeakSet和WeakMap的区别？
 

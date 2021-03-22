@@ -5,7 +5,7 @@ module.exports = {
   port: 9527,
   extraWatchFiles: ['./*'],
   head: [
-    ['link', { rel: 'shortcut icon', type: "image/x-icon", href: `./favicon.ico` }]
+    ['link', { rel: 'shortcut icon', type: "image/x-icon", href: `/img/favicon.ico` }]
   ],
   markdown: {
     lineNumbers: true
@@ -29,7 +29,7 @@ module.exports = {
     editLinks: true,
     // 默认为 "Edit this page"
     editLinkText: '在Github上编辑此页',
-    docsDir: '/',
+    docsDir: 'docs',
     docsBranch: 'master',    
     lastUpdated: '上次更新',
     nav: [{

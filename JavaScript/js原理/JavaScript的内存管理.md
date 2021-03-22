@@ -3,8 +3,9 @@ title: JavaScript的内存管理
 date: 2021-03-20 18:39:52
 permalink: /pages/b50bad/
 categories:
+  - js原理
 tags:
-  - 
+  - JavaScript
 ---
 ## 内存模型
 - 基本类型普遍被存放在『栈』中，而复杂类型是被存放在堆内存的。

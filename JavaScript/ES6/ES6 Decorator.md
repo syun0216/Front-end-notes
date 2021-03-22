@@ -3,8 +3,10 @@ title: ES6 Decorator
 date: 2021-03-20 18:39:52
 permalink: /pages/d9ebac/
 categories:
+  - ES6
 tags:
-  - 
+  - ES6
+  - JavaScript
 ---
  探寻ECMAScript的装饰器Decorator
 

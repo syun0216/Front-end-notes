@@ -3,8 +3,10 @@ title: Promise&Generator
 date: 2021-03-20 18:39:52
 permalink: /pages/c8677a/
 categories:
+  - ES6
 tags:
-  - 
+  - ES6
+  - JavaScript
 ---
 Promise & Generator 简单入门
 

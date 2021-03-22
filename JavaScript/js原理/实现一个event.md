@@ -3,8 +3,9 @@ title: 实现一个event
 date: 2021-03-20 18:39:52
 permalink: /pages/2c3bf4/
 categories:
+  - js原理
 tags:
-  - 
+  - JavaScript
 ---
 ## 如何实现一个Event
 

@@ -3,8 +3,9 @@ title: 前端如何进行seo优化
 date: 2021-03-20 18:39:52
 permalink: /pages/c1a6d9/
 categories:
+  - 项目
 tags:
-  - 
+  - seo
 ---
 1. 合理的title、description、keywords：搜索对着三项的权重逐个减小，title值强调重点即可；description把页面内容高度概括，不可过分堆砌关键词；keywords列举出重要关键词。
 

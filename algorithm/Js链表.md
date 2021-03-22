@@ -3,8 +3,12 @@ title: Js链表
 date: 2021-03-20 18:39:52
 permalink: /pages/c29ced/
 categories:
+  - 算法
 tags:
-  - 
+  - 链表
+author: 
+    name: junwen
+    link: https://github.com/syun0216
 ---
 ## 链表(Linked-list)
 

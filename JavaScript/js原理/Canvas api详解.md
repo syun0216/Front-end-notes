@@ -3,8 +3,9 @@ title: Canvas api详解
 date: 2021-03-20 18:39:52
 permalink: /pages/12cc8e/
 categories:
+  - js原理
 tags:
-  - 
+  - JavaScript
 ---
 ## Canvas API 详解
 

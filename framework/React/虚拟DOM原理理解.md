@@ -3,8 +3,9 @@ title: 虚拟DOM原理理解
 date: 2021-03-20 18:39:52
 permalink: /pages/8df2fb/
 categories:
+  - 框架
 tags:
-  - 
+  - 前端框架
 ---
 ## 什么是virtual dom
 

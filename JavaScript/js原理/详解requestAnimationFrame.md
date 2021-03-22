@@ -3,8 +3,9 @@ title: 详解requestAnimationFrame
 date: 2021-03-20 18:39:52
 permalink: /pages/64db0d/
 categories:
+  - js原理
 tags:
-  - 
+  - JavaScript
 ---
 ## requestAnimationFrame详解
 

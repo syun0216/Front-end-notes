@@ -3,8 +3,9 @@ title: cordova构建项目时的问题
 date: 2021-03-20 18:39:52
 permalink: /pages/a66f47/
 categories:
+  - js技巧
 tags:
-  - 
+  - JavaScript
 ---
 ### Cannot read property 'toLowerCase' of undefined 
 
