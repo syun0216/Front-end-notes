@@ -1,7 +1,7 @@
 module.exports = {
   title: "junwen's blog",
   dest: './docs',
-  base: '/Front-end-notes/',
+  base: '/myblog/',
   port: 9527,
   extraWatchFiles: ['./*'],
   head: [
@@ -34,11 +34,69 @@ module.exports = {
     lastUpdated: '上次更新',
     nav: [{
         text: 'JavaScript',
-        link: '/JavaScript/'
+        link: '/JavaScript/',
+        items : [
+          {
+            text: 'ES6', 
+            items: [
+              {text: 'ES6 Decorator', link: '/pages/d9ebac/'},
+              {text: 'ES6核心特性', link: '/pages/780ea1/'},
+              {text: 'Promise&Generator', link: '/pages/c8677a/'},
+            ]
+          },
+          {
+            text: 'js原理', 
+            items: [
+              {text: '简单实现bind、apply和call', link: '/pages/1b56f1/'},
+              {text: '如何遍历一个dom tree', link: '/pages/abdbcb/'},
+              {text: '实现函数currying', link: '/pages/a8d5a8/'},
+              {text: '实现一个event', link: '/pages/2c3bf4/'},
+              {text: '详解js的继承', link: '/pages/4eb0e3/'},
+              {text: '详解requestAnimationFrame', link: '/pages/64db0d/'},
+              {text: 'Canvas api详解', link: '/pages/12cc8e/'},
+              {text: 'DOM事件', link: '/pages/185d72/'},
+              {text: 'EventLoop详解', link: '/pages/c49367/'},
+              {text: 'JavaScript的内存管理', link: '/pages/b50bad/'},
+              {text: 'JavaScript的运行机制', link: '/pages/38b7e6/'},
+              {text: 'Math对象', link: '/pages/f16f62/'},
+              {text: 'new操作符都做了什么', link: '/pages/6cd659/'},
+              {text: 'create基本实现原理', link: '/pages/46dbec/'},
+              {text: 'Set、Map、WeakSet和WeakMap', link: '/pages/d980a4/'},
+              {text: 'web worker原理', link: '/pages/674ecf/'},
+              {text: 'WebGL教程(MDN)', link: '/pages/aa8fa2/'},
+            ]
+          },
+          {
+            text: 'jsInfoSeries', 
+            items: [
+              {text: '简介', link: '/pages/7607c2/'},
+              {text: 'JavaScript基础知识', link: '/pages/422096/'},
+              {text: '基础知识2', link: '/pages/492e58/'},
+              {text: '基础知识3', link: '/pages/30968d/'},
+              {text: '基础知识4', link: '/pages/e139a1/'},
+            ]
+          },
+          {
+            text: '技巧', 
+            items: [
+              {text: ' 5个js解构有趣用途', link: '/pages/d7ece9/'},
+              {text: '如何使用set提高代码性能', link: '/pages/c41df5/'},
+              {text: 'cordova构建项目时的问题', link: '/pages/a66f47/'},
+              {text: 'js中轻松遍历对象属性的几种方式', link: '/pages/662607/'},
+            ]
+          },
+        ]
       },
       {
         text: 'CSS',
-        link: '/css/'
+        link: '/css/',
+        items: [
+          {text: '怎么写出更好的css', link: '/pages/493b2e/'},
+          {text: 'BFC详解', link: '/pages/f0604f/'},
+          {text: 'box-shadow详解', link: '/pages/13ad2e/'},
+          {text: 'CSS小技巧', link: '/pages/a07dbe/'},
+          {text: 'Grid布局详解', link: '/pages/b81321/'},
+        ]
       },
       {
         text: 'HTML',
@@ -46,19 +104,55 @@ module.exports = {
       },
       {
         text: '网络',
-        link: '/web/'
+        link: '/web/',
+        items: [
+          {text: 'IP十问', link: '/pages/6f3543/'},
+          {text: 'http笔试', link: '/pages/34aa02/'},
+          {text: 'http协议', link: '/pages/13759c/'},
+        ]
       },
       {
         text: '项目构建',
-        link: '/project/'
+        link: '/project/',
+        items: [
+          {text: '浏览器原理', link: '/pages/8f406e/'},
+          {text: '浏览器缓存其实就这么一回事儿', link: '/pages/0434c5/'},
+          {text: '浏览器兼容性问题', link: '/pages/c048e3/'},
+          {text: '移动端开发兼容性适配', link: '/pages/a7caa6/'},
+          {text: '前端性能优化', link: '/pages/a986cc/'},
+          {text: '前端如何进行seo优化', link: '/pages/c1a6d9/'},
+          {text: 'webpack', items: [
+            {text: 'webpack HMR', link: '/pages/f8772a/'},
+            {text: 'webpack优化基本方法', link: '/pages/14a436/'},
+          ]},
+        ]
       },
       {
         text: '算法集合',
-        link: '/algorithm/'
+        link: '/algorithm/',
+        items: [
+          {text: 'leetcode题解', items: [
+            {text: '两数之和', link: '/pages/0b0af3/'},
+            {text: '判断整数是否为回文串', link: '/pages/acf1c6/'},
+            {text: '无重复字符的最长子串', link: '/pages/5695b7/'},
+          ]},
+          {text: 'Js链表', link: '/pages/c29ced/'},
+          {text: 'JavaScript排序', link: '/pages/ffcbad/'},
+        ]
       },
       {
         text: '框架',
-        link: '/framework/'
+        link: '/framework/',
+        items: [
+          {text: 'React', items: [
+            {text: '虚拟DOM原理理解', link: '/pages/8df2fb/'},
+            {text: 'React Hook', link: '/pages/e61fb3/'},
+            {text: '组件复用指南', link: '/pages/b5eeec/'},
+          ]},
+          {text: 'Vue', items: [
+            {text: 'Vue举一反三', link: '/pages/c390d1/'},
+          ]},
+        ]
       },
       {
         text: '面试题',
