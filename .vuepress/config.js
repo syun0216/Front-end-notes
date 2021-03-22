@@ -32,6 +32,10 @@ module.exports = {
     docsDir: 'docs',
     docsBranch: 'master',    
     lastUpdated: '上次更新',
+     bodyBgImg: [
+      '/img/3.jpg'
+    ], // body背景大图，默认无。 单张图片 String || 多张图片 Array, 多张图片时每隔15秒换一张。
+    bodyBgImgOpacity: 1,
     nav: [{
         text: 'JavaScript',
         link: '/JavaScript/',
