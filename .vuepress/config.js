@@ -33,7 +33,7 @@ module.exports = {
     docsBranch: 'master',    
     lastUpdated: '上次更新',
      bodyBgImg: [
-      '/img/3.jpg'
+      'https://z3.ax1x.com/2021/03/22/6TuSVf.jpg'
     ], // body背景大图，默认无。 单张图片 String || 多张图片 Array, 多张图片时每隔15秒换一张。
     bodyBgImgOpacity: 1,
     nav: [{
