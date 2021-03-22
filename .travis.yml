@@ -6,7 +6,7 @@ install:
   - yarn global add vuepress
 script:
   - yarn
-  - yarn docs:build # 执行命令
+  - yarn build # 执行命令
   - pwd
 deploy:
   provider: pages
