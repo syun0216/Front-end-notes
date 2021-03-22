@@ -1,6 +1,6 @@
 ---
 title: ES6核心特性
-date: 2021-03-20 18:39:52
+date: 2019-08-06 18:39:52
 permalink: /pages/780ea1/
 categories:
   - ES6

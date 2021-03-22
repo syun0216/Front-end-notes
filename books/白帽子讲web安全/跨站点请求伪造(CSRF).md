@@ -1,6 +1,6 @@
 ---
 title: 跨站点请求伪造(CSRF)
-date: 2021-03-20 18:39:52
+date: 2020-03-27 18:39:52
 permalink: /pages/5ea602/
 categories:
   - 书籍

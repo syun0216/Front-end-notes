@@ -1,6 +1,6 @@
 ---
 title: JavaScript基础知识
-date: 2021-03-20 18:39:52
+date: 2020-02-01 18:39:52
 permalink: /pages/422096/
 categories:
 tags:

@@ -1,6 +1,6 @@
 ---
 title: 实现函数currying
-date: 2021-03-20 18:39:52
+date: 2019-11-05 18:39:52
 permalink: /pages/a8d5a8/
 categories:
   - js原理

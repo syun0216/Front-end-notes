@@ -1,6 +1,6 @@
 ---
 title: Promise&Generator
-date: 2021-03-20 18:39:52
+date: 2019-08-06 18:39:52
 permalink: /pages/c8677a/
 categories:
   - ES6
