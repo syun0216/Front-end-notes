@@ -354,6 +354,7 @@ module.exports = {
           {title: '两数之和',path: '/algorithm/leetcode题解/两数之和', collapsable: false},
           {title: '判断整数是否为回文串',path: '/algorithm/leetcode题解/判断整数是否为回文串', collapsable: false},
           {title: '无重复字符的最长子串',path: '/algorithm/leetcode题解/无重复字符的最长子串', collapsable: false},
+          {title: '删除链表中的节点',path: '/algorithm/leetcode题解/删除链表中的节点', collapsable: false},
           ],
         },
         '/algorithm/Js链表',
