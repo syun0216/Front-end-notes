@@ -1,5 +1,5 @@
 module.exports = {
-  title: "junwen's blog",
+  title: "Junwen's home",
   dest: './docs',
   base: '/Front-end-notes/',
   port: 9527,
@@ -356,7 +356,8 @@ module.exports = {
           {title: '无重复字符的最长子串',path: '/algorithm/leetcode题解/无重复字符的最长子串', collapsable: false},
           {title: '删除链表中的节点',path: '/algorithm/leetcode题解/删除链表中的节点', collapsable: false},
           {title: '链表相交',path: '/algorithm/leetcode题解/链表相交', collapsable: false},
-          {title: '有效的括号',path: '/algorithm/leetcode题解/有效的括号', collapsable: false}
+          {title: '有效的括号',path: '/algorithm/leetcode题解/有效的括号', collapsable: false},
+          {title: '盛最多水的容器',path: '/algorithm/leetcode题解/盛最多水的容器', collapsable: false}
           ],
         },
         '/algorithm/Js链表',
