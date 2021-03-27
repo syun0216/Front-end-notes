@@ -357,7 +357,9 @@ module.exports = {
           {title: '删除链表中的节点',path: '/algorithm/leetcode题解/删除链表中的节点', collapsable: false},
           {title: '链表相交',path: '/algorithm/leetcode题解/链表相交', collapsable: false},
           {title: '有效的括号',path: '/algorithm/leetcode题解/有效的括号', collapsable: false},
-          {title: '盛最多水的容器',path: '/algorithm/leetcode题解/盛最多水的容器', collapsable: false}
+          {title: '盛最多水的容器',path: '/algorithm/leetcode题解/盛最多水的容器', collapsable: false},
+          {title: '整数反转',path: '/algorithm/leetcode题解/整数反转', collapsable: false},
+          {title: '删除链表中重复的元素',path: '/algorithm/leetcode题解/删除链表中重复的元素', collapsable: false},
           ],
         },
         '/algorithm/Js链表',
