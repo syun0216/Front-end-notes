@@ -1,6 +1,6 @@
 ---
 home: true
-heroText: 记录一些前端的东西
+heroText: 前端笔记本
 tagline: Front end notes
 actionText: 开始阅读 →
 actionLink: /JavaScript/
