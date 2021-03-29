@@ -344,6 +344,7 @@ module.exports = {
         {title: '移动端开发兼容性适配', path: '/project/移动端开发兼容性适配', collapsable: false},
         {title: '前端性能优化', path: '/project/前端性能优化', collapsable: false},
         {title: '前端如何进行seo优化', path: '/project/前端如何进行seo优化', collapsable: false},
+        {title: 'lerna学习笔记', path: '/project/lerna学习笔记', collapsable: false},
         {title: 'webpack', collapsable: false, children: [
           '/project/webpack/webpack HMR.md',
           '/project/webpack/webpack优化基本方法.md',
@@ -362,6 +363,8 @@ module.exports = {
           {title: '删除链表中的重复元素',path: '/algorithm/leetcode题解/删除链表中的重复元素', collapsable: false},
           {title: '合并两个有序链表',path: '/algorithm/leetcode题解/合并两个有序链表', collapsable: false},
           {title: '删除有序数组中的重复项',path: '/algorithm/leetcode题解/删除有序数组中的重复项', collapsable: false},
+          {title: '分隔链表',path: '/algorithm/leetcode题解/分隔链表', collapsable: false},
+          {title: '复制带随机指针的链表',path: '/algorithm/leetcode题解/复制带随机指针的链表', collapsable: false},
           ],
         },
         '/algorithm/Js链表',
