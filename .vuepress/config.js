@@ -365,6 +365,7 @@ module.exports = {
           {title: '删除有序数组中的重复项',path: '/algorithm/leetcode题解/删除有序数组中的重复项', collapsable: false},
           {title: '分隔链表',path: '/algorithm/leetcode题解/分隔链表', collapsable: false},
           {title: '复制带随机指针的链表',path: '/algorithm/leetcode题解/复制带随机指针的链表', collapsable: false},
+          {title: '设计循环队列',path: '/algorithm/leetcode题解/设计循环队列', collapsable: false},
           ],
         },
         '/algorithm/Js链表',
