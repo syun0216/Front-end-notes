@@ -345,6 +345,8 @@ module.exports = {
         {title: '前端性能优化', path: '/project/前端性能优化', collapsable: false},
         {title: '前端如何进行seo优化', path: '/project/前端如何进行seo优化', collapsable: false},
         {title: 'lerna学习笔记', path: '/project/lerna学习笔记', collapsable: false},
+        {title: '用nodejs搭建api网关', path: '/project/用nodejs搭建api网关', collapsable: false},
+        {title: 'etcd学习', path: '/project/etcd学习', collapsable: false},
         {title: 'webpack', collapsable: false, children: [
           '/project/webpack/webpack HMR.md',
           '/project/webpack/webpack优化基本方法.md',
@@ -370,6 +372,7 @@ module.exports = {
           {title: '复制带随机指针的链表',path: '/algorithm/leetcode题解/复制带随机指针的链表', collapsable: false},
           {title: '设计循环队列',path: '/algorithm/leetcode题解/设计循环队列', collapsable: false},
           {title: '最长公共前缀',path: '/algorithm/leetcode题解/最长公共前缀', collapsable: false},
+          {title: '实现strStr()',path: '/algorithm/leetcode题解/实现strStr()', collapsable: false},
           ],
         },
         '/algorithm/Js链表',
