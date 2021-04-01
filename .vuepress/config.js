@@ -372,7 +372,7 @@ module.exports = {
           {title: '复制带随机指针的链表',path: '/algorithm/leetcode题解/复制带随机指针的链表', collapsable: false},
           {title: '设计循环队列',path: '/algorithm/leetcode题解/设计循环队列', collapsable: false},
           {title: '最长公共前缀',path: '/algorithm/leetcode题解/最长公共前缀', collapsable: false},
-          {title: '实现strStr()',path: '/algorithm/leetcode题解/实现strStr()', collapsable: false},
+          {title: '实现strStr',path: '/algorithm/leetcode题解/实现strStr', collapsable: false},
           ],
         },
         '/algorithm/Js链表',
