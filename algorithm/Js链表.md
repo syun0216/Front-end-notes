@@ -702,6 +702,43 @@ k 是一个正整数，它的值小于或等于链表的长度。
 链接：https://leetcode-cn.com/problems/swap-nodes-in-pairs
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 
+解答：  [官方题解](https://leetcode-cn.com/problems/rotate-list/solution/xuan-zhuan-lian-biao-by-leetcode-solutio-woq1/)
+
+```js
+/**
+ * Definition for singly-linked list.
+ * function ListNode(val, next) {
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.next = (next===undefined ? null : next)
+ * }
+ */
+/**
+ * @param {ListNode} head
+ * @param {number} k
+ * @return {ListNode}
+ */
+
+var rotateRight = function(head, k) {
+    if(k === 0 || !head || !head.next) return head; 
+    let len = 1;
+    let cur = head;
+    while(cur.next) {
+        cur = cur.next;
+        len++;
+    }
+    let rest = len - k % len; // k和链表长度取余，如果k是len的倍数，则说明走k步后还是在头节点
+    if(rest === len) return head;
+    cur.next = head;
+    while(rest > 0) {
+        cur = cur.next;
+        rest--;
+    }
+    let ret = cur.next;
+    cur.next = null;
+    return ret;
+};
+```
+
 ### 链表节点的删除
 
 #### 删除链表倒数的第 N 个节点 &nbsp; [leetcode 19](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/) 
