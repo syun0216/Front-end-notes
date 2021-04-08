@@ -374,6 +374,7 @@ module.exports = {
           {title: '最长公共前缀',path: '/algorithm/leetcode题解/最长公共前缀', collapsable: false},
           {title: '实现strStr',path: '/algorithm/leetcode题解/实现strStr', collapsable: false},
           {title: '转换成小写字母',path: '/algorithm/leetcode题解/转换成小写字母', collapsable: false},
+          {title: '排序链表',path: '/algorithm/leetcode题解/排序链表', collapsable: false},
           ],
         },
         '/algorithm/Js链表',
