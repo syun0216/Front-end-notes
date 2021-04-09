@@ -378,7 +378,8 @@ module.exports = {
           ],
         },
         '/algorithm/Js链表',
-        '/algorithm/JavaScript排序'
+        '/algorithm/JavaScript排序',
+        '/algorithm/随机数生成pi',
       ],
       '/framework/': [
         {title: 'React',collapsable: false, children: [
