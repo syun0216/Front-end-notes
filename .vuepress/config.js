@@ -350,6 +350,11 @@ module.exports = {
         {title: 'webpack', collapsable: false, children: [
           '/project/webpack/webpack HMR.md',
           '/project/webpack/webpack优化基本方法.md',
+        ]},
+        {title: 'CI/CD', collapsable: false, children: [
+          '/project/cicd/如何从0到1一步步成体系地搭建CI.md',
+          '/project/cicd/如何建立前端标准化研发流程.md',
+          '/project/cicd/如何打造全链路项目生命周期的统一交付平台.md',
         ]}      
       ],
       '/algorithm/': [
