@@ -347,6 +347,7 @@ module.exports = {
         {title: 'lerna学习笔记', path: '/project/lerna学习笔记', collapsable: false},
         {title: '用nodejs搭建api网关', path: '/project/用nodejs搭建api网关', collapsable: false},
         {title: 'etcd学习', path: '/project/etcd学习', collapsable: false},
+        {title: 'packagejson详解', path: '/project/packagejson详解', collapsable: false},
         {title: 'webpack', collapsable: false, children: [
           '/project/webpack/webpack HMR.md',
           '/project/webpack/webpack优化基本方法.md',
